@@ -1,0 +1,27 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://tssmultisports.com/sitemap.xml
+
+# Crawl delay (optional, can be removed if not needed)
+Crawl-delay: 1
+
+# Block common bot paths
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+Disallow: /private/
+
+# Allow specific search engines to crawl everything
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /

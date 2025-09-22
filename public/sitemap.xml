@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    <!-- Home Page -->
+    <url>
+        <loc>https://tssmultisports.com/</loc>
+        <lastmod>2025-09-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- After School Football Page -->
+    <url>
+        <loc>https://tssmultisports.com/after-school-football</loc>
+        <lastmod>2025-09-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Walking Football Page -->
+    <url>
+        <loc>https://tssmultisports.com/walking-football</loc>
+        <lastmod>2025-09-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Toddler Football Page -->
+    <url>
+        <loc>https://tssmultisports.com/toddler-football</loc>
+        <lastmod>2025-09-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Additional pages that will be added later -->
+    <!--
+    <url>
+        <loc>https://tssmultisports.com/events</loc>
+        <lastmod>2025-09-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://tssmultisports.com/coaches</loc>
+        <lastmod>2025-09-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://tssmultisports.com/gallery</loc>
+        <lastmod>2025-09-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://tssmultisports.com/register</loc>
+        <lastmod>2025-09-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://tssmultisports.com/about</loc>
+        <lastmod>2025-09-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://tssmultisports.com/faqs</loc>
+        <lastmod>2025-09-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://tssmultisports.com/safety-policy</loc>
+        <lastmod>2025-09-20</lastmod>
+        <changefreq>quarterly</changefreq>
+        <priority>0.4</priority>
+    </url>
+    
+    <url>
+        <loc>https://tssmultisports.com/terms</loc>
+        <lastmod>2025-09-20</lastmod>
+        <changefreq>quarterly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <url>
+        <loc>https://tssmultisports.com/privacy</loc>
+        <lastmod>2025-09-20</lastmod>
+        <changefreq>quarterly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    -->
+
+</urlset>

@@ -1,12 +1,10 @@
 "use client"
 
 import Link from 'next/link';
-import Image from 'next/image'; // For the logo
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import { ThemeToggle } from '@/components/theme-toggle';
 import { Button } from '@/components/ui/button';
-import { motion, AnimatePresence } from 'framer-motion';
+import { ThemeToggle } from '@/components/theme-toggle';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -41,49 +39,31 @@ const Navbar = () => {
   ];
 
   return (
-    <motion.nav 
-      className={`bg-background/80 backdrop-blur-md border-b border-border sticky top-0 z-50 transition-all duration-300 ${
-        scrolled ? 'shadow-md py-2' : 'py-4'
-      }`}
-      initial={{ opacity: 0, y: -20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-    >
+    <nav className="bg-background border-b border-border sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center h-16 px-4">
         {/* Logo */}
         <Link href="/" className="flex items-center">
-          <motion.div 
-            className="font-bold text-2xl text-primary"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
+          <div className="font-bold text-2xl text-primary">
             TSS <span className="text-foreground">Multisports</span>
-          </motion.div>
+          </div>
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-1">
-          {navItems.map((item, index) => (
-            <motion.div
+        <div className="hidden md:flex items-center gap-4">
+          {navItems.map((item) => (
+            <Link
               key={item.label}
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
-              whileHover={{ y: -2 }}
+              href={item.href}
+              className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
             >
-              <Link href={item.href} className="px-3 py-2 text-sm font-medium rounded-md hover:bg-primary/10 transition-colors">
-                {item.label}
-              </Link>
-            </motion.div>
+              {item.label}
+            </Link>
           ))}
-          <div className="ml-2">
-            <ThemeToggle />
-          </div>
+          <ThemeToggle />
         </div>
 
         {/* Mobile Navigation Toggle */}
-        <div className="flex items-center gap-4 md:hidden">
-          <ThemeToggle />
+        <div className="md:hidden">
           <Button
             variant="ghost"
             size="icon"
@@ -96,38 +76,27 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Navigation Menu */}
-      <AnimatePresence>
-        {isMenuOpen && (
-          <motion.div
-            className="md:hidden bg-background border-b border-border"
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3 }}
-          >
-            <div className="container mx-auto py-4 px-4 flex flex-col space-y-2">
-              {navItems.map((item, index) => (
-                <motion.div
-                  key={item.label}
-                  initial={{ opacity: 0, x: -10 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: index * 0.1 }}
-                >
-                  <Link 
-                    href={item.href} 
-                    className="block py-2 px-4 text-foreground hover:bg-primary/10 rounded-md transition-colors"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    {item.label}
-                  </Link>
-                </motion.div>
-              ))}
+      {isMenuOpen && (
+        <div className="md:hidden bg-background border-t border-border">
+          <div className="container mx-auto py-4 px-4 flex flex-col space-y-2">
+            {navItems.map((item) => (
+              <Link
+                key={item.label}
+                href={item.href}
+                className="block py-2 px-4 text-muted-foreground hover:bg-accent hover:text-accent-foreground rounded-md transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {item.label}
+              </Link>
+            ))}
+            <div className="pt-2 border-t border-border">
+              <ThemeToggle />
             </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </motion.nav>
+          </div>
+        </div>
+      )}
+    </nav>
   );
 };
 
-export default Navbar; 
+export default Navbar;
