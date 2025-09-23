@@ -21,6 +21,7 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://tssmultisports.com"),
   title: {
     default: "TSS Multisports Club",
     template: "%s | TSS Multisports"

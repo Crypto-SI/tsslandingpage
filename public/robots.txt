@@ -12,16 +12,60 @@ Disallow: /api/
 Disallow: /_next/
 Disallow: /admin/
 Disallow: /private/
+Disallow: /temp/
+Disallow: /test/
+Disallow: *.pdf$
+Disallow: *.doc$
+Disallow: *.docx$
+Disallow: *.xls$
+Disallow: *.xlsx$
+Disallow: *.ppt$
+Disallow: *.pptx$
 
 # Allow specific search engines to crawl everything
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 0
+User-agent: Mediapartners-Google
+Allow: /
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 0
 
 User-agent: Slurp
 Allow: /
+Crawl-delay: 0
 
 User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 1
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 1
+
+# Mobile bot specific rules
+User-agent: Googlebot-Mobile
+Allow: /
+Crawl-delay: 0
+
+User-agent: MSNBot-Mobile
+Allow: /
+Crawl-delay: 0
+
+# Image bot specific rules
+User-agent: Googlebot-Image
+Allow: /
+
+# News bot specific rules
+User-agent: Googlebot-News
+Allow: /
+
+# Video bot specific rules
+User-agent: Googlebot-Video
 Allow: /

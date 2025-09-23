@@ -198,6 +198,146 @@ export default function AfterSchoolFootballPage() {
           "equipment": "provided",
           "qualification": "FA qualified coaches"
         }}
+        events={[
+          {
+            name: "After School Football Session",
+            description: "Professional football coaching for children aged 5-12",
+            startDate: "2025-09-23T16:00:00+00:00",
+            endDate: "2025-09-23T17:30:00+00:00",
+            location: "Main Pitch, Sportsville",
+            organizer: "TSS Multisports",
+            eventType: "Event",
+            duration: "PT1H30M"
+          }
+        ]}
+        courses={[
+          {
+            name: "After School Football Program",
+            description: "Comprehensive football training for children aged 5-12",
+            provider: "TSS Multisports",
+            educationalLevel: "Beginner to Intermediate",
+            courseMode: "PhysicalActivity",
+            duration: "PT1H30M",
+            offers: [
+              {
+                price: "12",
+                priceCurrency: "GBP",
+                availability: "https://schema.org/InStock"
+              },
+              {
+                price: "95",
+                priceCurrency: "GBP",
+                availability: "https://schema.org/InStock"
+              },
+              {
+                price: "280",
+                priceCurrency: "GBP",
+                availability: "https://schema.org/InStock"
+              }
+            ],
+            audience: "Children aged 5-12"
+          }
+        ]}
+        faqs={[
+          {
+            questionName: "What age groups do you cater for?",
+            acceptedAnswerText: "We offer after school football coaching for children aged 5-12, with specific sessions for different age groups: 5-7 years, 8-10 years, and 11-12 years."
+          },
+          {
+            questionName: "What equipment do children need to bring?",
+            acceptedAnswerText: "All equipment is provided by TSS Multisports, including footballs, cones, training bibs, and first aid supplies. Children should wear comfortable sports clothing and trainers."
+          },
+          {
+            questionName: "Are your coaches qualified?",
+            acceptedAnswerText: "Yes, all our coaches are FA qualified with extensive experience working with children. They are also DBS checked and trained in first aid and safeguarding."
+          }
+        ]}
+        reviews={{
+          reviews: [
+            {
+              author: "Sarah Johnson",
+              datePublished: "2025-09-15",
+              reviewRating: { ratingValue: 5 },
+              reviewBody: "My son absolutely loves the after school football program! The coaches are fantastic and he's developed so much confidence.",
+              itemReviewed: "After School Football Program"
+            },
+            {
+              author: "Mike Thompson",
+              datePublished: "2025-09-10",
+              reviewRating: { ratingValue: 4 },
+              reviewBody: "Great program with professional coaching. My daughter has really improved her skills and made new friends.",
+              itemReviewed: "After School Football Program"
+            }
+          ],
+          aggregateRating: {
+            ratingValue: 4.5,
+            reviewCount: 2
+          }
+        }}
+        eatData={{
+          name: "TSS Multisports",
+          description: "Professional football coaching and multisports programs for children and seniors in Sportsville, UK",
+          url: "https://tssmultisports.com",
+          logo: "/images/logo.png",
+          image: "/images/club-image.jpg",
+          address: {
+            streetAddress: "123 Sports Avenue",
+            addressLocality: "Sportsville",
+            addressRegion: "UK",
+            postalCode: "12345",
+            addressCountry: "GB"
+          },
+          contactPoint: {
+            telephone: "+44-1234-567890",
+            contactType: "customer service",
+            email: "info@tssmultisports.com"
+          },
+          sameAs: [
+            "https://facebook.com/tssmultisports",
+            "https://instagram.com/tssmultisports",
+            "https://twitter.com/tssmultisports"
+          ],
+          foundingDate: "2020-01-01",
+          numberOfEmployees: "10-50",
+          priceRange: "££",
+          openingHours: [
+            {
+              dayOfWeek: "Monday",
+              opens: "09:00",
+              closes: "20:00"
+            },
+            {
+              dayOfWeek: "Tuesday",
+              opens: "09:00",
+              closes: "20:00"
+            },
+            {
+              dayOfWeek: "Wednesday",
+              opens: "09:00",
+              closes: "20:00"
+            },
+            {
+              dayOfWeek: "Thursday",
+              opens: "09:00",
+              closes: "20:00"
+            },
+            {
+              dayOfWeek: "Friday",
+              opens: "09:00",
+              closes: "20:00"
+            },
+            {
+              dayOfWeek: "Saturday",
+              opens: "08:00",
+              closes: "18:00"
+            },
+            {
+              dayOfWeek: "Sunday",
+              opens: "10:00",
+              closes: "16:00"
+            }
+          ]
+        }}
       />
       <main className="min-h-screen">
       {/* Hero Section */}

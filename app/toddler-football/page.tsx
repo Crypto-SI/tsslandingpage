@@ -206,6 +206,141 @@ export default function ToddlerFootballPage() {
           "equipment": "provided",
           "qualification": "FA qualified coaches"
         }}
+        events={[
+          {
+            name: "Parent & Toddler Football Session",
+            description: "Fun football activities for toddlers aged 3-5 with parent participation",
+            startDate: "2025-09-23T09:30:00+00:00",
+            endDate: "2025-09-23T10:30:00+00:00",
+            location: "Indoor Hall, Sportsville",
+            organizer: "TSS Multisports",
+            eventType: "Event",
+            duration: "PT1H"
+          }
+        ]}
+        courses={[
+          {
+            name: "Toddler Football Development Program",
+            description: "Early introduction to football fundamentals for children aged 3-5",
+            provider: "TSS Multisports",
+            educationalLevel: "Beginner",
+            courseMode: "PhysicalActivity",
+            duration: "PT1H",
+            offers: [
+              {
+                price: "15",
+                priceCurrency: "GBP",
+                availability: "https://schema.org/InStock"
+              },
+              {
+                price: "160",
+                priceCurrency: "GBP",
+                availability: "https://schema.org/InStock"
+              }
+            ],
+            audience: "Children aged 3-5 with parent participation"
+          }
+        ]}
+        faqs={[
+          {
+            questionName: "What age range is toddler football suitable for?",
+            acceptedAnswerText: "Our toddler football program is designed specifically for children aged 3-5 years. Parent participation is required as this helps children feel secure and learn from their role models."
+          },
+          {
+            questionName: "What should my child wear to toddler football?",
+            acceptedAnswerText: "Children should wear comfortable clothing that allows them to move freely. We recommend tracksuit bottoms or shorts and a t-shirt. All football equipment is provided, but children should wear indoor trainers."
+          },
+          {
+            questionName: "Do parents need to participate?",
+            acceptedAnswerText: "Yes, parent participation is a key part of our toddler football program. We encourage parents to join in the activities as it helps children build confidence and strengthens the parent-child bond through shared experiences."
+          }
+        ]}
+        reviews={{
+          reviews: [
+            {
+              author: "Emma Wilson",
+              datePublished: "2025-09-12",
+              reviewRating: { ratingValue: 5 },
+              reviewBody: "My 4-year-old absolutely loves the toddler football sessions! The coaches are so patient and make it really fun for both kids and parents.",
+              itemReviewed: "Toddler Football Program"
+            },
+            {
+              author: "David Chen",
+              datePublished: "2025-09-08",
+              reviewRating: { ratingValue: 4 },
+              reviewBody: "Great program for introducing young children to football. My son has really improved his coordination and social skills.",
+              itemReviewed: "Toddler Football Program"
+            }
+          ],
+          aggregateRating: {
+            ratingValue: 4.5,
+            reviewCount: 2
+          }
+        }}
+        eatData={{
+          name: "TSS Multisports",
+          description: "Professional football coaching and multisports programs for children and seniors in Sportsville, UK",
+          url: "https://tssmultisports.com",
+          logo: "/images/logo.png",
+          image: "/images/club-image.jpg",
+          address: {
+            streetAddress: "123 Sports Avenue",
+            addressLocality: "Sportsville",
+            addressRegion: "UK",
+            postalCode: "12345",
+            addressCountry: "GB"
+          },
+          contactPoint: {
+            telephone: "+44-1234-567890",
+            contactType: "customer service",
+            email: "info@tssmultisports.com"
+          },
+          sameAs: [
+            "https://facebook.com/tssmultisports",
+            "https://instagram.com/tssmultisports",
+            "https://twitter.com/tssmultisports"
+          ],
+          foundingDate: "2020-01-01",
+          numberOfEmployees: "10-50",
+          priceRange: "££",
+          openingHours: [
+            {
+              dayOfWeek: "Monday",
+              opens: "09:00",
+              closes: "20:00"
+            },
+            {
+              dayOfWeek: "Tuesday",
+              opens: "09:00",
+              closes: "20:00"
+            },
+            {
+              dayOfWeek: "Wednesday",
+              opens: "09:00",
+              closes: "20:00"
+            },
+            {
+              dayOfWeek: "Thursday",
+              opens: "09:00",
+              closes: "20:00"
+            },
+            {
+              dayOfWeek: "Friday",
+              opens: "09:00",
+              closes: "20:00"
+            },
+            {
+              dayOfWeek: "Saturday",
+              opens: "08:00",
+              closes: "18:00"
+            },
+            {
+              dayOfWeek: "Sunday",
+              opens: "10:00",
+              closes: "16:00"
+            }
+          ]
+        }}
       />
       <main className="min-h-screen">
       {/* Hero Section */}

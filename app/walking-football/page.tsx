@@ -206,6 +206,141 @@ export default function WalkingFootballPage() {
           "health-benefits": "cardiovascular, mobility, social",
           "qualification": "FA qualified coaches"
         }}
+        events={[
+          {
+            name: "Walking Football Session",
+            description: "Low-impact football perfect for maintaining fitness and enjoying social sport for ages 50+",
+            startDate: "2025-09-23T10:00:00+00:00",
+            endDate: "2025-09-23T11:30:00+00:00",
+            location: "Indoor Pitch, Sportsville",
+            organizer: "TSS Multisports",
+            eventType: "Event",
+            duration: "PT1H30M"
+          }
+        ]}
+        courses={[
+          {
+            name: "Walking Football Fitness Program",
+            description: "Low-impact football exercise for seniors aged 50+",
+            provider: "TSS Multisports",
+            educationalLevel: "Beginner",
+            courseMode: "PhysicalActivity",
+            duration: "PT1H30M",
+            offers: [
+              {
+                price: "8",
+                priceCurrency: "GBP",
+                availability: "https://schema.org/InStock"
+              },
+              {
+                price: "250",
+                priceCurrency: "GBP",
+                availability: "https://schema.org/InStock"
+              }
+            ],
+            audience: "Seniors aged 50+"
+          }
+        ]}
+        faqs={[
+          {
+            questionName: "Is walking football suitable for beginners?",
+            acceptedAnswerText: "Yes, walking football is perfect for beginners and those returning to exercise. The focus is on gentle movement, social interaction, and having fun rather than competitive play."
+          },
+          {
+            questionName: "What equipment do I need for walking football?",
+            acceptedAnswerText: "All equipment is provided by TSS Multisports, including footballs, bibs, and first aid supplies. Just wear comfortable clothing and trainers suitable for indoor/outdoor play."
+          },
+          {
+            questionName: "What are the health benefits of walking football?",
+            acceptedAnswerText: "Walking football offers numerous health benefits including improved cardiovascular health, better balance and coordination, increased mobility, and enhanced social connections with other participants."
+          }
+        ]}
+        reviews={{
+          reviews: [
+            {
+              author: "Margaret Thompson",
+              datePublished: "2025-09-14",
+              reviewRating: { ratingValue: 5 },
+              reviewBody: "I absolutely love the walking football sessions! It's great exercise and I've made wonderful new friends. The coaches are so supportive and understanding.",
+              itemReviewed: "Walking Football Program"
+            },
+            {
+              author: "John Davis",
+              datePublished: "2025-09-09",
+              reviewRating: { ratingValue: 4 },
+              reviewBody: "Perfect activity for keeping active and social. The pace is just right and everyone is so welcoming. I look forward to every session!",
+              itemReviewed: "Walking Football Program"
+            }
+          ],
+          aggregateRating: {
+            ratingValue: 4.5,
+            reviewCount: 2
+          }
+        }}
+        eatData={{
+          name: "TSS Multisports",
+          description: "Professional football coaching and multisports programs for children and seniors in Sportsville, UK",
+          url: "https://tssmultisports.com",
+          logo: "/images/logo.png",
+          image: "/images/club-image.jpg",
+          address: {
+            streetAddress: "123 Sports Avenue",
+            addressLocality: "Sportsville",
+            addressRegion: "UK",
+            postalCode: "12345",
+            addressCountry: "GB"
+          },
+          contactPoint: {
+            telephone: "+44-1234-567890",
+            contactType: "customer service",
+            email: "info@tssmultisports.com"
+          },
+          sameAs: [
+            "https://facebook.com/tssmultisports",
+            "https://instagram.com/tssmultisports",
+            "https://twitter.com/tssmultisports"
+          ],
+          foundingDate: "2020-01-01",
+          numberOfEmployees: "10-50",
+          priceRange: "££",
+          openingHours: [
+            {
+              dayOfWeek: "Monday",
+              opens: "09:00",
+              closes: "20:00"
+            },
+            {
+              dayOfWeek: "Tuesday",
+              opens: "09:00",
+              closes: "20:00"
+            },
+            {
+              dayOfWeek: "Wednesday",
+              opens: "09:00",
+              closes: "20:00"
+            },
+            {
+              dayOfWeek: "Thursday",
+              opens: "09:00",
+              closes: "20:00"
+            },
+            {
+              dayOfWeek: "Friday",
+              opens: "09:00",
+              closes: "20:00"
+            },
+            {
+              dayOfWeek: "Saturday",
+              opens: "08:00",
+              closes: "18:00"
+            },
+            {
+              dayOfWeek: "Sunday",
+              opens: "10:00",
+              closes: "16:00"
+            }
+          ]
+        }}
       />
       <main className="min-h-screen">
       {/* Hero Section */}

@@ -1,5 +1,13 @@
 import Head from 'next/head';
 import { ReactNode } from 'react';
+import EventSchema from './EventSchema';
+import CourseSchema from './CourseSchema';
+import FAQSchema from './FAQSchema';
+import ReviewSchema from './ReviewSchema';
+import EATSchema from './EATSchema';
+import OrganizationSchema from './OrganizationSchema';
+import LocalBusinessSchema from './LocalBusinessSchema';
+import BreadcrumbSchema from './BreadcrumbSchema';
 
 interface SEOProps {
   title: string;
@@ -23,6 +31,128 @@ interface SEOProps {
   siteName?: string;
   additionalMetaTags?: { [key: string]: string };
   children?: ReactNode;
+  
+  // Enhanced Schema Props
+  events?: any[];
+  courses?: any[];
+  faqs?: { questionName: string; acceptedAnswerText: string }[];
+  reviews?: {
+    reviews: {
+      author: string;
+      datePublished: string;
+      reviewRating: { ratingValue: number };
+      reviewBody: string;
+      itemReviewed?: string;
+    }[];
+    aggregateRating: { ratingValue: number; reviewCount: number };
+  };
+  
+  // E-E-A-T Schema Props
+  eatData?: {
+    name: string;
+    description: string;
+    url: string;
+    logo: string;
+    image: string;
+    address: {
+      streetAddress: string;
+      addressLocality: string;
+      addressRegion: string;
+      postalCode: string;
+      addressCountry: string;
+    };
+    contactPoint: {
+      telephone: string;
+      contactType: string;
+      email: string;
+    };
+    sameAs: string[];
+    foundingDate?: string;
+    numberOfEmployees?: string;
+    priceRange?: string;
+    openingHours?: {
+      dayOfWeek: string;
+      opens: string;
+      closes: string;
+    }[];
+  };
+  
+  // Advanced Schema Props
+  organizationData?: {
+    name: string;
+    description: string;
+    url: string;
+    logo: string;
+    image: string;
+    address: {
+      streetAddress: string;
+      addressLocality: string;
+      addressRegion: string;
+      postalCode: string;
+      addressCountry: string;
+    };
+    contactPoint: {
+      telephone: string;
+      contactType: string;
+      email: string;
+    };
+    sameAs: string[];
+    foundingDate?: string;
+    numberOfEmployees?: string;
+    priceRange?: string;
+    openingHours?: {
+      dayOfWeek: string;
+      opens: string;
+      closes: string;
+    }[];
+    awards?: string[];
+    aggregateRating?: {
+      ratingValue: number;
+      reviewCount: number;
+    };
+    serviceArea?: {
+      type: string;
+      name: string;
+    }[];
+  };
+  
+  localBusinessData?: {
+    name: string;
+    description: string;
+    url: string;
+    logo: string;
+    image: string;
+    address: {
+      streetAddress: string;
+      addressLocality: string;
+      addressRegion: string;
+      postalCode: string;
+      addressCountry: string;
+    };
+    contactPoint: {
+      telephone: string;
+      contactType: string;
+      email: string;
+    };
+    sameAs: string[];
+    openingHours?: {
+      dayOfWeek: string;
+      opens: string;
+      closes: string;
+    }[];
+    priceRange?: string;
+    geo?: {
+      latitude: string;
+      longitude: string;
+    };
+    areaServed?: string[];
+  };
+  
+  breadcrumbs?: {
+    position: number;
+    name: string;
+    item: string;
+  }[];
 }
 
 export default function SEO({
@@ -47,6 +177,14 @@ export default function SEO({
   siteName = 'TSS Multisports',
   additionalMetaTags,
   children,
+  events,
+  courses,
+  faqs,
+  reviews,
+  eatData,
+  organizationData,
+  localBusinessData,
+  breadcrumbs,
 }: SEOProps) {
   const fullTitle = ogTitle || `${title} | ${siteName}`;
   const fullDescription = ogDescription || description;
@@ -128,6 +266,33 @@ export default function SEO({
             __html: JSON.stringify(structuredData),
           }}
         />
+        
+        {/* Enhanced Structured Data */}
+        {events && events.map((event, index) => (
+          <EventSchema key={`event-${index}`} {...event} />
+        ))}
+        
+        {courses && courses.map((course, index) => (
+          <CourseSchema key={`course-${index}`} {...course} />
+        ))}
+        
+        {faqs && faqs.length > 0 && <FAQSchema mainEntity={faqs} />}
+        
+        {reviews && (
+          <ReviewSchema
+            reviews={reviews.reviews}
+            aggregateRating={reviews.aggregateRating}
+          />
+        )}
+        
+        {eatData && <EATSchema {...eatData} />}
+        
+        {/* Advanced Structured Data */}
+        {organizationData && <OrganizationSchema {...organizationData} />}
+        
+        {localBusinessData && <LocalBusinessSchema {...localBusinessData} />}
+        
+        {breadcrumbs && <BreadcrumbSchema breadcrumbs={breadcrumbs} />}
       </Head>
       {children}
     </>

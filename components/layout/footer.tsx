@@ -19,6 +19,7 @@ const Footer = () => {
         { name: 'Events', href: '/events' },
         { name: 'Coaches', href: '/coaches' },
         { name: 'Gallery', href: '/gallery' },
+        { name: 'Partners', href: '/partners' },
         { name: 'Register', href: '/register' },
       ],
     },

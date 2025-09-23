@@ -62,6 +62,292 @@ export default function HomePage() {
           "location": "Sportsville, UK",
           "contact": "+44-1234-567890"
         }}
+        events={[
+          {
+            name: "Holiday Football Camp",
+            description: "Fun football activities during school holidays for children aged 3-12",
+            startDate: "2025-10-21T09:00:00+00:00",
+            endDate: "2025-10-25T16:00:00+00:00",
+            location: "Sportsville Main Facility",
+            organizer: "TSS Multisports",
+            eventType: "Event",
+            duration: "PT7H"
+          }
+        ]}
+        courses={[
+          {
+            name: "Holiday Football Program",
+            description: "Comprehensive football coaching and multisports activities during school holidays",
+            provider: "TSS Multisports",
+            educationalLevel: "Beginner to Intermediate",
+            courseMode: "PhysicalActivity",
+            duration: "PT7H",
+            offers: [
+              {
+                price: "35",
+                priceCurrency: "GBP",
+                availability: "https://schema.org/InStock"
+              },
+              {
+                price: "175",
+                priceCurrency: "GBP",
+                availability: "https://schema.org/InStock"
+              }
+            ],
+            audience: "Children aged 3-12"
+          }
+        ]}
+        faqs={[
+          {
+            questionName: "What age groups do you cater for?",
+            acceptedAnswerText: "We offer programs for children aged 3-12 years, including toddler football (3-5), after school football (5-12), and holiday clubs for all age groups."
+          },
+          {
+            questionName: "Are your coaches qualified?",
+            acceptedAnswerText: "Yes, all our coaches are FA qualified with extensive experience working with children. They are DBS checked and trained in first aid and safeguarding."
+          },
+          {
+            questionName: "What should children bring to sessions?",
+            acceptedAnswerText: "Children should wear comfortable sports clothing and trainers. All equipment is provided, but they should bring a water bottle and any necessary medications."
+          }
+        ]}
+        reviews={{
+          reviews: [
+            {
+              author: "Sarah Johnson",
+              datePublished: "2025-09-15",
+              reviewRating: { ratingValue: 5 },
+              reviewBody: "My son absolutely loves the holiday club! The coaches are fantastic and he's developed so much confidence and made new friends.",
+              itemReviewed: "Holiday Club Program"
+            },
+            {
+              author: "Mike Thompson",
+              datePublished: "2025-09-10",
+              reviewRating: { ratingValue: 4 },
+              reviewBody: "Great program with professional coaching. My daughter has really improved her skills and looks forward to every session.",
+              itemReviewed: "Holiday Club Program"
+            }
+          ],
+          aggregateRating: {
+            ratingValue: 4.5,
+            reviewCount: 2
+          }
+        }}
+        eatData={{
+          name: "TSS Multisports",
+          description: "Professional football coaching and multisports programs for children and seniors in Sportsville, UK",
+          url: "https://tssmultisports.com",
+          logo: "/images/logo.png",
+          image: "/images/club-image.jpg",
+          address: {
+            streetAddress: "123 Sports Avenue",
+            addressLocality: "Sportsville",
+            addressRegion: "UK",
+            postalCode: "12345",
+            addressCountry: "GB"
+          },
+          contactPoint: {
+            telephone: "+44-1234-567890",
+            contactType: "customer service",
+            email: "info@tssmultisports.com"
+          },
+          sameAs: [
+            "https://facebook.com/tssmultisports",
+            "https://instagram.com/tssmultisports",
+            "https://twitter.com/tssmultisports"
+          ],
+          foundingDate: "2020-01-01",
+          numberOfEmployees: "10-50",
+          priceRange: "££",
+          openingHours: [
+            {
+              dayOfWeek: "Monday",
+              opens: "09:00",
+              closes: "20:00"
+            },
+            {
+              dayOfWeek: "Tuesday",
+              opens: "09:00",
+              closes: "20:00"
+            },
+            {
+              dayOfWeek: "Wednesday",
+              opens: "09:00",
+              closes: "20:00"
+            },
+            {
+              dayOfWeek: "Thursday",
+              opens: "09:00",
+              closes: "20:00"
+            },
+            {
+              dayOfWeek: "Friday",
+              opens: "09:00",
+              closes: "20:00"
+            },
+            {
+              dayOfWeek: "Saturday",
+              opens: "08:00",
+              closes: "18:00"
+            },
+            {
+              dayOfWeek: "Sunday",
+              opens: "10:00",
+              closes: "16:00"
+            }
+          ]
+        }}
+        organizationData={{
+          name: "TSS Multisports",
+          description: "Professional football coaching and multisports programs for children and seniors in Sportsville, UK",
+          url: "https://tssmultisports.com",
+          logo: "/images/logo.png",
+          image: "/images/club-image.jpg",
+          address: {
+            streetAddress: "123 Sports Avenue",
+            addressLocality: "Sportsville",
+            addressRegion: "UK",
+            postalCode: "12345",
+            addressCountry: "GB"
+          },
+          contactPoint: {
+            telephone: "+44-1234-567890",
+            contactType: "customer service",
+            email: "info@tssmultisports.com"
+          },
+          sameAs: [
+            "https://facebook.com/tssmultisports",
+            "https://instagram.com/tssmultisports",
+            "https://twitter.com/tssmultisports"
+          ],
+          foundingDate: "2020-01-01",
+          numberOfEmployees: "10-50",
+          priceRange: "££",
+          openingHours: [
+            {
+              dayOfWeek: "Monday",
+              opens: "09:00",
+              closes: "20:00"
+            },
+            {
+              dayOfWeek: "Tuesday",
+              opens: "09:00",
+              closes: "20:00"
+            },
+            {
+              dayOfWeek: "Wednesday",
+              opens: "09:00",
+              closes: "20:00"
+            },
+            {
+              dayOfWeek: "Thursday",
+              opens: "09:00",
+              closes: "20:00"
+            },
+            {
+              dayOfWeek: "Friday",
+              opens: "09:00",
+              closes: "20:00"
+            },
+            {
+              dayOfWeek: "Saturday",
+              opens: "08:00",
+              closes: "18:00"
+            },
+            {
+              dayOfWeek: "Sunday",
+              opens: "10:00",
+              closes: "16:00"
+            }
+          ],
+          awards: [
+            "FA Charter Standard",
+            "Safeguarding Children Certificate",
+            "First Aid Qualified"
+          ],
+          aggregateRating: {
+            ratingValue: 4.8,
+            reviewCount: 45
+          },
+          serviceArea: [
+            { type: "Place", name: "Sportsville" },
+            { type: "Place", name: "Surrounding areas" }
+          ]
+        }}
+        localBusinessData={{
+          name: "TSS Multisports",
+          description: "Professional football coaching and multisports programs for children and seniors in Sportsville, UK",
+          url: "https://tssmultisports.com",
+          logo: "/images/logo.png",
+          image: "/images/club-image.jpg",
+          address: {
+            streetAddress: "123 Sports Avenue",
+            addressLocality: "Sportsville",
+            addressRegion: "UK",
+            postalCode: "12345",
+            addressCountry: "GB"
+          },
+          contactPoint: {
+            telephone: "+44-1234-567890",
+            contactType: "customer service",
+            email: "info@tssmultisports.com"
+          },
+          sameAs: [
+            "https://facebook.com/tssmultisports",
+            "https://instagram.com/tssmultisports",
+            "https://twitter.com/tssmultisports"
+          ],
+          openingHours: [
+            {
+              dayOfWeek: "Monday",
+              opens: "09:00",
+              closes: "20:00"
+            },
+            {
+              dayOfWeek: "Tuesday",
+              opens: "09:00",
+              closes: "20:00"
+            },
+            {
+              dayOfWeek: "Wednesday",
+              opens: "09:00",
+              closes: "20:00"
+            },
+            {
+              dayOfWeek: "Thursday",
+              opens: "09:00",
+              closes: "20:00"
+            },
+            {
+              dayOfWeek: "Friday",
+              opens: "09:00",
+              closes: "20:00"
+            },
+            {
+              dayOfWeek: "Saturday",
+              opens: "08:00",
+              closes: "18:00"
+            },
+            {
+              dayOfWeek: "Sunday",
+              opens: "10:00",
+              closes: "16:00"
+            }
+          ],
+          priceRange: "££",
+          geo: {
+            latitude: "51.5074",
+            longitude: "-0.1278"
+          },
+          areaServed: ["Sportsville", "UK", "Local communities"]
+        }}
+        breadcrumbs={[
+          {
+            position: 1,
+            name: "Home",
+            item: "https://tssmultisports.com/"
+          }
+        ]}
       />
       <main className="flex min-h-screen flex-col">
       {/* Hero Section */}

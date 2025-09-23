@@ -35,7 +35,8 @@ const Navbar = () => {
     { href: '/events', label: 'Events' },
     { href: '/coaches', label: 'Coaches' },
     { href: '/gallery', label: 'Gallery' },
-    { href: '/register', label: 'Register Interest' },
+    { href: '/partners', label: 'Partners' },
+    { href: '/new-register-interest', label: 'Register Interest' },
   ];
 
   return (

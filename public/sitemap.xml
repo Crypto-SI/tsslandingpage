@@ -7,31 +7,52 @@
     <!-- Home Page -->
     <url>
         <loc>https://tssmultisports.com/</loc>
-        <lastmod>2025-09-20</lastmod>
+        <lastmod>2025-09-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en-gb" href="https://tssmultisports.com/" />
+        <xhtml:link rel="alternate" hreflang="en-us" href="https://tssmultisports.com/" />
     </url>
 
     <!-- After School Football Page -->
     <url>
         <loc>https://tssmultisports.com/after-school-football</loc>
-        <lastmod>2025-09-20</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <lastmod>2025-09-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="en-gb" href="https://tssmultisports.com/after-school-football" />
     </url>
 
     <!-- Walking Football Page -->
     <url>
         <loc>https://tssmultisports.com/walking-football</loc>
-        <lastmod>2025-09-20</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <lastmod>2025-09-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="en-gb" href="https://tssmultisports.com/walking-football" />
     </url>
 
     <!-- Toddler Football Page -->
     <url>
         <loc>https://tssmultisports.com/toddler-football</loc>
-        <lastmod>2025-09-20</lastmod>
+        <lastmod>2025-09-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="en-gb" href="https://tssmultisports.com/toddler-football" />
+    </url>
+
+    <!-- Blog Page -->
+    <url>
+        <loc>https://tssmultisports.com/blog</loc>
+        <lastmod>2025-09-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Locations Page -->
+    <url>
+        <loc>https://tssmultisports.com/locations</loc>
+        <lastmod>2025-09-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
