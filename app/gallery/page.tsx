@@ -8,55 +8,64 @@ const generateGalleryImages = () => [
     id: "holiday-camp-1",
     alt: "Children enjoying holiday camp football activities",
     caption: "Fun-filled holiday camp session with professional coaching and team building exercises",
-    category: "Holiday Camp"
+    category: "Holiday Camp",
+    src: "/holiday-camp-hero-1920x800-children-football-fun.png"
   },
   {
-    id: "after-school-1", 
+    id: "after-school-1",
     alt: "After school football training session",
     caption: "Expert coaching focusing on skill development and teamwork in after school programs",
-    category: "After School Football"
+    category: "After School Football",
+    src: "/after-school-hero-1920x800-children-football-training.png"
   },
   {
     id: "walking-football-1",
     alt: "Walking football session for seniors",
     caption: "Gentle, inclusive football perfect for maintaining fitness and social connection",
-    category: "Walking Football"
+    category: "Walking Football",
+    src: "/walking-hero-1920x800-senior-football-group.png"
   },
   {
     id: "toddler-1",
     alt: "Toddler football development program",
     caption: "Early years football fundamentals with age-appropriate activities and parent participation",
-    category: "Toddler Football"
+    category: "Toddler Football",
+    src: "/toddler-hero-1920x800-parent-child-football.png"
   },
   {
     id: "coaching-1",
     alt: "Professional coaching demonstration",
     caption: "Qualified coaches providing expert guidance and technique development",
-    category: "Coaching Sessions"
+    category: "Coaching Sessions",
+    src: "/coaches-hero-1920x800-team-professional-coaches.png"
   },
   {
     id: "holiday-camp-2",
     alt: "Multi-sports activities during holiday program",
     caption: "Diverse sports activities including cricket, tennis, and athletics for comprehensive development",
-    category: "Holiday Camp"
+    category: "Holiday Camp",
+    src: "/holiday-camp-hero-1920x800-children-football-fun.png"
   },
   {
     id: "after-school-2",
     alt: "Match play in after school football",
     caption: "Friendly matches applying learned skills in competitive yet supportive environment",
-    category: "After School Football"
+    category: "After School Football",
+    src: "/after-school-hero-1920x800-children-football-training.png"
   },
   {
     id: "walking-football-2",
     alt: "Social walking football session",
     caption: "Community-focused sports activity promoting health and friendship among seniors",
-    category: "Walking Football"
+    category: "Walking Football",
+    src: "/walking-hero-1920x800-senior-football-group.png"
   },
   {
     id: "toddler-2",
     alt: "Parent and toddler football session",
     caption: "Bonding through football with professional guidance for early childhood development",
-    category: "Toddler Football"
+    category: "Toddler Football",
+    src: "/toddler-hero-1920x800-parent-child-football.png"
   }
 ]
 
@@ -81,7 +90,7 @@ export const metadata: Metadata = {
     description: "Explore our collection of sports activities, coaching moments, and program highlights",
     images: [
       {
-        url: "/images/gallery-og.jpg",
+        url: "/gallery-hero-1920x800-sports-activities-collection.png",
         width: 1200,
         height: 630,
         alt: "TSS Multisports - Sports Activities Gallery"
@@ -95,7 +104,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "TSS Multisports Gallery",
     description: "Sports activities and coaching program highlights from our community",
-    images: ["/images/gallery-og.jpg"],
+    images: ["/gallery-hero-1920x800-sports-activities-collection.png"],
     creator: "@tssmultisports"
   },
   alternates: {
@@ -134,7 +143,7 @@ export default function GalleryPage() {
               "@type": "ImageObject",
               name: img.alt,
               description: img.caption,
-              contentUrl: "/images/gallery-placeholder.jpg",
+              contentUrl: img.src || "/gallery-hero-1920x800-sports-activities-collection.png",
               encodingFormat: "image/jpeg"
             }))
           }

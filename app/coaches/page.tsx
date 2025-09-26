@@ -42,7 +42,7 @@ const coaches: Coach[] = [
     experience: "10+ years coaching youth football",
     specialties: ["Football Development", "Tactical Awareness", "Goalkeeping", "Mental Resilience"],
     ageGroups: ["5-12 years", "13-16 years", "Adults"],
-    imageUrl: "/placeholder-image",
+    imageUrl: "/coach-sarah-johnson-400x400-head-coach.png",
     email: "sarah.johnson@tssmultisports.com",
     phone: "+44-1234-567891",
     achievements: [
@@ -69,7 +69,7 @@ const coaches: Coach[] = [
     experience: "6 years specializing in toddler football",
     specialties: ["Early Development", "Parent Participation", "Coordination Skills", "Social Development"],
     ageGroups: ["3-5 years", "Parent & Toddler"],
-    imageUrl: "/placeholder-image",
+    imageUrl: "/coach-emma-wilson-400x400-toddler-specialist.png",
     email: "emma.wilson@tssmultisports.com",
     phone: "+44-1234-567892",
     achievements: [
@@ -96,7 +96,7 @@ const coaches: Coach[] = [
     experience: "8 years in senior football coaching",
     specialties: ["Low-Impact Exercise", "Social Connection", "Health Benefits", "Inclusive Coaching"],
     ageGroups: ["50+ years", "Senior Groups"],
-    imageUrl: "/placeholder-image",
+    imageUrl: "/coach-john-davis-400x400-walking-football-coordinator.png",
     email: "john.davis@tssmultisports.com",
     phone: "+44-1234-567893",
     achievements: [
@@ -123,7 +123,7 @@ const coaches: Coach[] = [
     experience: "7 years multisports coaching",
     specialties: ["Multisports Development", "Physical Literacy", "Athletic Fundamentals", "Game Sense Approach"],
     ageGroups: ["5-12 years", "Holiday Programs"],
-    imageUrl: "/placeholder-image",
+    imageUrl: "/coach-michael-chen-400x400-multisports-coach.png",
     email: "michael.chen@tssmultisports.com",
     phone: "+44-1234-567894",
     achievements: [
@@ -150,7 +150,7 @@ const coaches: Coach[] = [
     experience: "12 years goalkeeping coaching",
     specialties: ["Shot Stopping", "Distribution", "Command of Area", "Mental Toughness", "Footwork"],
     ageGroups: ["8-16 years", "Advanced Goalkeepers"],
-    imageUrl: "/placeholder-image",
+    imageUrl: "/coach-lisa-thompson-400x400-goalkeeping-specialist.png",
     email: "lisa.thompson@tssmultisports.com",
     phone: "+44-1234-567895",
     achievements: [
@@ -177,7 +177,7 @@ const coaches: Coach[] = [
     experience: "9 years in player development",
     specialties: ["Technical Skills", "Tactical Awareness", "Game Intelligence", "Player Assessment"],
     ageGroups: ["10-16 years", "Advanced Development"],
-    imageUrl: "/placeholder-image",
+    imageUrl: "/coach-david-martinez-400x400-development-coach.png",
     email: "david.martinez@tssmultisports.com",
     phone: "+44-1234-567896",
     achievements: [
@@ -243,8 +243,12 @@ const CoachCard = ({ coach }: { coach: Coach }) => {
     <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
       <div className="p-6">
         <div className="flex items-start gap-4 mb-4">
-          <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center flex-shrink-0">
-            <Users className="h-10 w-10 text-primary" />
+          <div className="w-20 h-20 rounded-full overflow-hidden flex-shrink-0">
+            <img
+              src={coach.imageUrl || "/coaches-profile-400x400-sarah-johnson-head-coach.png"}
+              alt={coach.name}
+              className="w-full h-full object-cover"
+            />
           </div>
           <div className="flex-1">
             <div className="flex items-start justify-between mb-2">
@@ -347,7 +351,7 @@ export default function CoachesPage() {
         ]}
         ogTitle="Our Coaches | TSS Multisports"
         ogDescription="Meet our team of qualified, experienced coaches dedicated to developing young talent and promoting sports participation."
-        ogImage="/images/coaches-og.jpg"
+        ogImage="/coaches-hero-1920x800-team-professional-coaches.png"
         canonicalUrl="/coaches"
         publishedTime="2025-09-20T00:00:00+00:00"
         modifiedTime="2025-09-20T00:00:00+00:00"
@@ -414,8 +418,8 @@ export default function CoachesPage() {
                 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6"
               />
               
-              <AnimatedComponent 
-                animation="fadeIn" 
+              <AnimatedComponent
+                animation="fadeIn"
                 delay={0.3}
                 className="text-xl text-muted-foreground mb-8"
               >
@@ -430,6 +434,17 @@ export default function CoachesPage() {
                   Contact Us
                 </Link>
               </div>
+            </div>
+          </div>
+          
+          {/* Hero Image */}
+          <div className="container mx-auto px-4 mt-12">
+            <div className="max-w-4xl mx-auto">
+              <img
+                src="/coaches-hero-1920x800-team-professional-coaches.png"
+                alt="Professional Coaching Team"
+                className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg"
+              />
             </div>
           </div>
         </section>

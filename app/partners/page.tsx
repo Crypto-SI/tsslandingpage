@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     description: "Strategic partnerships with affillia Sports, Peterborough United FC, and Bedford Town FC providing player pathways and career development opportunities.",
     images: [
       {
-        url: "/images/partners-og.jpg",
+        url: "/partners-hero-1920x800-football-collaborations.png",
         width: 1200,
         height: 630,
         alt: "TSS Multisports - Football Partnerships"
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Partners | TSS Multisports",
     description: "Strategic football partnerships providing player pathways and career development opportunities",
-    images: ["/images/partners-og.jpg"],
+    images: ["/partners-hero-1920x800-football-collaborations.png"],
     creator: "@tssmultisports"
   },
   alternates: {
@@ -68,7 +68,7 @@ export default function PartnersPage() {
   const partnerships = [
     {
       name: "Bedford Town FC",
-      logo: "/images/partners/bedford-town-logo.png",
+      logo: "/partners-logo-bedford-town-400x400-semi-pro-club.png",
       link: "https://bedfordtownfc.co.uk",
       description: "Bedford Town FC are a semi-pro club who TSS runs courses on behalf of. This collaboration combines TSS's coaching expertise with Bedford Town's established football program to provide quality training and development opportunities.",
       type: "semi-pro-club",
@@ -76,7 +76,7 @@ export default function PartnersPage() {
     },
     {
       name: "Affillia Sports",
-      logo: "/images/partners/affillia-sports-logo.png",
+      logo: "/partners-logo-affillia-sports-400x400-football-agency.png",
       link: "https://affilliasports.com",
       description: "Affillia Sports is an agency that offers exceptional players a pathway and optional free support with any future careers in the game. They provide professional guidance and opportunities for talented athletes to advance their football careers.",
       type: "agency",
@@ -84,7 +84,7 @@ export default function PartnersPage() {
     },
     {
       name: "Peterborough United FC",
-      logo: "/images/partners/peterborough-united-logo.png",
+      logo: "/partners-logo-peterborough-united-400x400-professional-club.png",
       link: "https://theposh.com",
       description: "Peterborough United FC are a professional team that Anton Jacob, head coach at TSS, often recruits for. This partnership provides talented players with direct pathways to professional football opportunities.",
       type: "professional-club",
@@ -116,7 +116,7 @@ export default function PartnersPage() {
         ]}
         ogTitle="Partners | TSS Multisports"
         ogDescription="Strategic partnerships with affillia Sports, Peterborough United FC, and Bedford Town FC providing player pathways and career development opportunities"
-        ogImage="/images/partners-og.jpg"
+        ogImage="/partners-hero-1920x800-football-collaborations.png"
         canonicalUrl="/partners"
         publishedTime="2025-09-23T00:00:00+00:00"
         modifiedTime="2025-09-23T00:00:00+00:00"
@@ -206,11 +206,11 @@ export default function PartnersPage() {
                   <div className={`bg-muted/50 rounded-lg p-8 md:p-12 ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} flex flex-col md:flex-row items-center gap-8`}>
                     {/* Logo */}
                     <div className="flex-shrink-0 mb-6 md:mb-0">
-                      <div className="w-32 h-32 bg-background rounded-lg flex items-center justify-center border-2 border-dashed border-gray-300">
-                        <span className="text-sm text-muted-foreground text-center">
-                          {partnership.name}<br />Logo
-                        </span>
-                      </div>
+                      <img
+                        src={partnership.logo}
+                        alt={`${partnership.name} Logo`}
+                        className="w-32 h-32 object-contain rounded-lg"
+                      />
                     </div>
 
                     {/* Content */}

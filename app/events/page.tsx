@@ -44,7 +44,8 @@ const events: Event[] = [
     registered: 15,
     instructor: "Coach Sarah Johnson",
     requirements: ["Sports clothing", "Trainers", "Water bottle"],
-    highlights: ["Professional coaching", "Small group sizes", "Skill development"]
+    highlights: ["Professional coaching", "Small group sizes", "Skill development"],
+    imageUrl: "/after-school-hero-1920x800-children-football-training.png"
   },
   {
     id: "2",
@@ -61,7 +62,8 @@ const events: Event[] = [
     registered: 12,
     instructor: "Coach Emma Wilson",
     requirements: ["Comfortable clothing", "Indoor trainers", "Parent participation"],
-    highlights: ["Parent participation", "Coordination development", "Social skills"]
+    highlights: ["Parent participation", "Coordination development", "Social skills"],
+    imageUrl: "/toddler-hero-1920x800-parent-child-football.png"
   },
   {
     id: "3",
@@ -78,7 +80,8 @@ const events: Event[] = [
     registered: 18,
     instructor: "Coach John Davis",
     requirements: ["Comfortable clothing", "Indoor/outdoor trainers", "Water bottle"],
-    highlights: ["Health benefits", "Social connection", "Inclusive environment"]
+    highlights: ["Health benefits", "Social connection", "Inclusive environment"],
+    imageUrl: "/walking-hero-1920x800-senior-football-group.png"
   },
   {
     id: "4",
@@ -95,7 +98,8 @@ const events: Event[] = [
     registered: 8,
     instructor: "Coaching Team",
     requirements: ["Football kit", "Lunch", "Water bottle", "Sun protection"],
-    highlights: ["5 days of coaching", "Match play", "Certificate", "Progress tracking"]
+    highlights: ["5 days of coaching", "Match play", "Certificate", "Progress tracking"],
+    imageUrl: "/holiday-camp-hero-1920x800-children-football-fun.png"
   },
   {
     id: "5",
@@ -112,7 +116,8 @@ const events: Event[] = [
     registered: 45,
     instructor: "Tournament Director",
     requirements: ["Team kit", "Boots", "Shin pads", "Water bottle"],
-    highlights: ["Trophies", "Professional refereeing", "Family entertainment", "Refreshments"]
+    highlights: ["Trophies", "Professional refereeing", "Family entertainment", "Refreshments"],
+    imageUrl: "/tournament-hero-1920x800-children-competition.png"
   },
   {
     id: "6",
@@ -129,7 +134,8 @@ const events: Event[] = [
     registered: 22,
     instructor: "Coaching Team",
     requirements: ["Sports clothing", "Trainers", "Packed lunch", "Christmas spirit"],
-    highlights: ["Christmas theme", "Multiple sports", "Prizes", "Hot chocolate"]
+    highlights: ["Christmas theme", "Multiple sports", "Prizes", "Hot chocolate"],
+    imageUrl: "/christmas-multisports-hero-1920x800-fun-activities.png"
   }
 ]
 
@@ -205,17 +211,28 @@ const EventCard = ({ event }: { event: Event }) => {
 
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-      <div className="p-6">
-        <div className="flex items-start justify-between mb-4">
-          <div className="flex-1">
-            <div className="flex items-center gap-2 mb-2">
-              <span className="text-2xl">{getProgramIcon(event.program)}</span>
-              <h3 className="text-xl font-semibold text-gray-900">{event.name}</h3>
-            </div>
-            <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${getEventTypeColor(event.type)}`}>
-              {event.type.charAt(0).toUpperCase() + event.type.slice(1)}
-            </span>
+      <div className="h-48 bg-gray-200 relative">
+        {event.imageUrl ? (
+          <img
+            src={event.imageUrl}
+            alt={event.name}
+            className="w-full h-full object-cover"
+          />
+        ) : (
+          <div className="w-full h-full bg-gradient-to-br from-primary/20 to-primary/40 flex items-center justify-center">
+            <span className="text-4xl">{getProgramIcon(event.program)}</span>
           </div>
+        )}
+        <div className="absolute top-4 right-4">
+          <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${getEventTypeColor(event.type)}`}>
+            {event.type.charAt(0).toUpperCase() + event.type.slice(1)}
+          </span>
+        </div>
+      </div>
+      <div className="p-6">
+        <div className="flex items-center gap-2 mb-2">
+          <span className="text-2xl">{getProgramIcon(event.program)}</span>
+          <h3 className="text-xl font-semibold text-gray-900">{event.name}</h3>
         </div>
 
         <p className="text-gray-600 mb-4 line-clamp-2">{event.description}</p>
@@ -316,7 +333,7 @@ export default function EventsPage() {
         ]}
         ogTitle="Events & Sessions | TSS Multisports"
         ogDescription="Discover upcoming football sessions, holiday camps, tournaments, and special events at TSS Multisports."
-        ogImage="/images/events-og.jpg"
+        ogImage="/events-hero-1920x800-calendar-sessions.png"
         canonicalUrl="/events"
         publishedTime="2025-09-20T00:00:00+00:00"
         modifiedTime="2025-09-20T00:00:00+00:00"

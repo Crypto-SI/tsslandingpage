@@ -14,21 +14,21 @@ const videos = [
     id: "1",
     title: "After School Football Skills Session",
     description: "Watch our expert coaches work with children on fundamental football skills including dribbling, passing, and shooting techniques.",
-    thumbnail: "/placeholder-image",
+    thumbnail: "/after-school-video-thumbnail-400x300-football-skills.png",
     duration: "3:45"
   },
   {
     id: "2", 
     title: "Team Match Play",
     description: "Exciting small-sided matches where children apply their skills in a fun, competitive environment.",
-    thumbnail: "/placeholder-image",
+    thumbnail: "/after-school-video-thumbnail-400x300-team-match-play.png",
     duration: "4:20"
   },
   {
     id: "3",
     title: "Coaching Philosophy",
     description: "Learn about our approach to youth football development and how we create a positive learning environment.",
-    thumbnail: "/placeholder-image",
+    thumbnail: "/after-school-video-thumbnail-400x300-coaching-philosophy.png",
     duration: "2:30"
   }
 ]
@@ -38,37 +38,43 @@ const images = [
     id: "1",
     alt: "Children practicing football drills",
     caption: "Skill development session with professional coaching",
-    category: "Training"
+    category: "Training",
+    src: "/after-school-benefit-skills-600x400-football-technique.png"
   },
   {
     id: "2",
     alt: "Small-sided football match",
     caption: "Fun competitive match play",
-    category: "Matches"
+    category: "Matches",
+    src: "/after-school-benefit-teamwork-600x400-children-team.png"
   },
   {
     id: "3",
     alt: "Team huddle after session",
     caption: "Building teamwork and sportsmanship",
-    category: "Team Building"
+    category: "Team Building",
+    src: "/after-school-benefit-fitness-600x400-active-children.png"
   },
   {
     id: "4",
     alt: "Award ceremony",
     caption: "Celebrating achievements and progress",
-    category: "Awards"
+    category: "Awards",
+    src: "/after-school-benefit-confidence-600x400-children-smiling.png"
   },
   {
     id: "5",
     alt: "Professional coaching session",
     caption: "Expert guidance from qualified coaches",
-    category: "Coaching"
+    category: "Coaching",
+    src: "/after-school-benefit-skills-600x400-football-technique.png"
   },
   {
     id: "6",
     alt: "Children having fun with football",
     caption: "Enjoying the beautiful game",
-    category: "Fun"
+    category: "Fun",
+    src: "/after-school-benefit-confidence-600x400-children-smiling.png"
   }
 ]
 
@@ -185,7 +191,7 @@ export default function AfterSchoolFootballPage() {
         ]}
         ogTitle="After School Football Coaching | Ages 5-12"
         ogDescription="Expert after school football coaching for children aged 5-12. Professional coaching in a fun, structured environment."
-        ogImage="/images/after-school-football.jpg"
+        ogImage="/after-school-hero-1920x800-children-football-training.png"
         canonicalUrl="/after-school-football"
         publishedTime="2025-09-20T00:00:00+00:00"
         modifiedTime="2025-09-20T00:00:00+00:00"
@@ -278,8 +284,8 @@ export default function AfterSchoolFootballPage() {
           name: "TSS Multisports",
           description: "Professional football coaching and multisports programs for children and seniors in Sportsville, UK",
           url: "https://tssmultisports.com",
-          logo: "/images/logo.png",
-          image: "/images/club-image.jpg",
+          logo: "/after-school-hero-1920x800-children-football-training.png",
+          image: "/after-school-hero-1920x800-children-football-training.png",
           address: {
             streetAddress: "123 Sports Avenue",
             addressLocality: "Sportsville",
@@ -354,8 +360,8 @@ export default function AfterSchoolFootballPage() {
               className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6"
             />
             
-            <AnimatedComponent 
-              animation="fadeIn" 
+            <AnimatedComponent
+              animation="fadeIn"
               delay={0.3}
               className="text-xl text-muted-foreground mb-8"
             >
@@ -374,6 +380,17 @@ export default function AfterSchoolFootballPage() {
                 </button>
               </Link>
             </div>
+          </div>
+        </div>
+        
+        {/* Hero Image */}
+        <div className="container mx-auto px-4 mt-12">
+          <div className="max-w-4xl mx-auto">
+            <img
+              src="/after-school-hero-1920x800-children-football-training.png"
+              alt="After School Football Training Session"
+              className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg"
+            />
           </div>
         </div>
       </section>

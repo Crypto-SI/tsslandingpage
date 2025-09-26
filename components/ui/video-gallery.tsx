@@ -38,8 +38,21 @@ export default function VideoGallery({ videos, title = "Program Videos" }: Video
           {videos.map((video) => (
             <Card key={video.id} className="overflow-hidden group">
               <div className="relative aspect-video bg-muted">
-                {/* Placeholder for video thumbnail */}
-                <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary/20 to-primary/5">
+                {/* Video thumbnail */}
+                <img
+                  src={video.id.includes('-') ? `/${video.id}-thumbnail.png` : `/images/${video.id}-thumbnail.png`}
+                  alt={`${video.title} thumbnail`}
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    const img = e.currentTarget as HTMLImageElement;
+                    img.style.display = 'none';
+                    const placeholder = img.parentElement!.querySelector('.video-placeholder') as HTMLElement;
+                    if (placeholder) {
+                      placeholder.style.display = 'flex';
+                    }
+                  }}
+                />
+                <div className="video-placeholder w-full h-full flex items-center justify-center bg-gradient-to-br from-primary/20 to-primary/5 hidden">
                   <div className="text-center">
                     <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-2">
                       {playingVideo === video.id ? (

@@ -199,7 +199,7 @@ export default function LocationsPage() {
         ]}
         ogTitle="TSS Multisports Locations"
         ogDescription="Find your nearest TSS Multisports location in Sportsville and surrounding areas."
-        ogImage="/images/locations.jpg"
+        ogImage="/locations-hero-1920x800-sports-facilities.png"
         canonicalUrl="/locations"
         breadcrumbs={[
           {
@@ -298,6 +298,17 @@ export default function LocationsPage() {
               <Button variant="outline" className="border-primary text-primary hover:bg-primary/10">
                 Contact Us
               </Button>
+            </div>
+          </div>
+          
+          {/* Hero Image */}
+          <div className="container mx-auto px-4 mt-12">
+            <div className="max-w-4xl mx-auto">
+              <img
+                src="/locations-hero-1920x800-sports-facilities.png"
+                alt="Sports Facilities"
+                className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg"
+              />
             </div>
           </div>
         </section>

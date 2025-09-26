@@ -14,21 +14,21 @@ const videos = [
     id: "1",
     title: "Walking Football Introduction",
     description: "Learn about the benefits and rules of walking football, a perfect low-impact sport for active seniors.",
-    thumbnail: "/placeholder-image",
+    thumbnail: "/walking-video-thumbnail-400x300-introduction.png",
     duration: "4:15"
   },
   {
     id: "2", 
     title: "Walking Football Session",
     description: "Join our friendly walking football session and see the fun social atmosphere in action.",
-    thumbnail: "/placeholder-image",
+    thumbnail: "/walking-video-thumbnail-400x300-health-benefits.png",
     duration: "3:30"
   },
   {
     id: "3",
     title: "Health Benefits",
     description: "Hear from participants about the physical and mental health benefits of regular walking football.",
-    thumbnail: "/placeholder-image",
+    thumbnail: "/walking-video-thumbnail-400x300-social-connection.png",
     duration: "2:45"
   }
 ]
@@ -38,37 +38,43 @@ const images = [
     id: "1",
     alt: "Group of seniors playing walking football",
     caption: "Friendly walking football match with emphasis on fun and fitness",
-    category: "Matches"
+    category: "Matches",
+    src: "/walking-benefit-social-600x400-seniors-group.png"
   },
   {
     id: "2",
     alt: "Participants socializing after game",
     caption: "Building friendships and community connections",
-    category: "Social"
+    category: "Social",
+    src: "/walking-benefit-social-600x400-seniors-group.png"
   },
   {
     id: "3",
     alt: "Walking football coaching session",
     caption: "Professional guidance for safe and enjoyable play",
-    category: "Coaching"
+    category: "Coaching",
+    src: "/walking-benefit-social-600x400-seniors-group.png"
   },
   {
     id: "4",
     alt: "Team celebrating a goal",
     caption: "Celebrating achievements in a supportive environment",
-    category: "Fun"
+    category: "Fun",
+    src: "/walking-benefit-social-600x400-seniors-group.png"
   },
   {
     id: "5",
     alt: "Walking football equipment",
     caption: "Specialized equipment for safe play",
-    category: "Equipment"
+    category: "Equipment",
+    src: "/walking-benefit-social-600x400-seniors-group.png"
   },
   {
     id: "6",
     alt: "Group photo of participants",
     caption: "Our walking football community",
-    category: "Community"
+    category: "Community",
+    src: "/walking-benefit-social-600x400-seniors-group.png"
   }
 ]
 
@@ -192,7 +198,7 @@ export default function WalkingFootballPage() {
         ]}
         ogTitle="Walking Football | Ages 50+"
         ogDescription="Low-impact football perfect for maintaining fitness and enjoying social sport for ages 50+."
-        ogImage="/images/walking-football.jpg"
+        ogImage="/walking-hero-1920x800-senior-football-group.png"
         canonicalUrl="/walking-football"
         publishedTime="2025-09-20T00:00:00+00:00"
         modifiedTime="2025-09-20T00:00:00+00:00"
@@ -281,8 +287,8 @@ export default function WalkingFootballPage() {
           name: "TSS Multisports",
           description: "Professional football coaching and multisports programs for children and seniors in Sportsville, UK",
           url: "https://tssmultisports.com",
-          logo: "/images/logo.png",
-          image: "/images/club-image.jpg",
+          logo: "/walking-hero-1920x800-senior-football-group.png",
+          image: "/walking-hero-1920x800-senior-football-group.png",
           address: {
             streetAddress: "123 Sports Avenue",
             addressLocality: "Sportsville",
@@ -357,8 +363,8 @@ export default function WalkingFootballPage() {
               className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6"
             />
             
-            <AnimatedComponent 
-              animation="fadeIn" 
+            <AnimatedComponent
+              animation="fadeIn"
               delay={0.3}
               className="text-xl text-muted-foreground mb-8"
             >
@@ -377,6 +383,17 @@ export default function WalkingFootballPage() {
                 </button>
               </Link>
             </div>
+          </div>
+        </div>
+        
+        {/* Hero Image */}
+        <div className="container mx-auto px-4 mt-12">
+          <div className="max-w-4xl mx-auto">
+            <img
+              src="/walking-hero-1920x800-senior-football-group.png"
+              alt="Senior Walking Football Group"
+              className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg"
+            />
           </div>
         </div>
       </section>

@@ -41,7 +41,7 @@ const coaches: Coach[] = [
     experience: "10+ years coaching youth football",
     specialties: ["Football Development", "Tactical Awareness", "Goalkeeping", "Mental Resilience"],
     ageGroups: ["5-12 years", "13-16 years", "Adults"],
-    imageUrl: "/placeholder-image",
+    imageUrl: "/coaches-profile-sarah-johnson-400x400-head-coach-football-director.png",
     email: "sarah.johnson@tssmultisports.com",
     phone: "+44-1234-567891",
     achievements: [
@@ -68,7 +68,7 @@ const coaches: Coach[] = [
     experience: "6 years specializing in toddler football",
     specialties: ["Early Development", "Parent Participation", "Coordination Skills", "Social Development"],
     ageGroups: ["3-5 years", "Parent & Toddler"],
-    imageUrl: "/placeholder-image",
+    imageUrl: "/coaches-profile-emma-wilson-400x400-toddler-football-specialist.png",
     email: "emma.wilson@tssmultisports.com",
     phone: "+44-1234-567892",
     achievements: [
@@ -95,7 +95,7 @@ const coaches: Coach[] = [
     experience: "8 years in senior football coaching",
     specialties: ["Low-Impact Exercise", "Social Connection", "Health Benefits", "Inclusive Coaching"],
     ageGroups: ["50+ years", "Senior Groups"],
-    imageUrl: "/placeholder-image",
+    imageUrl: "/coaches-profile-john-davis-400x400-walking-football-coordinator.png",
     email: "john.davis@tssmultisports.com",
     phone: "+44-1234-567893",
     achievements: [
@@ -122,7 +122,7 @@ const coaches: Coach[] = [
     experience: "7 years multisports coaching",
     specialties: ["Multisports Development", "Physical Literacy", "Athletic Fundamentals", "Game Sense Approach"],
     ageGroups: ["5-12 years", "Holiday Programs"],
-    imageUrl: "/placeholder-image",
+    imageUrl: "/coaches-profile-michael-chen-400x400-multisports-physical-education-coach.png",
     email: "michael.chen@tssmultisports.com",
     phone: "+44-1234-567894",
     achievements: [
@@ -149,7 +149,7 @@ const coaches: Coach[] = [
     experience: "12 years goalkeeping coaching",
     specialties: ["Shot Stopping", "Distribution", "Command of Area", "Mental Toughness", "Footwork"],
     ageGroups: ["8-16 years", "Advanced Goalkeepers"],
-    imageUrl: "/placeholder-image",
+    imageUrl: "/coaches-profile-lisa-thompson-400x400-goalkeeping-specialist.png",
     email: "lisa.thompson@tssmultisports.com",
     phone: "+44-1234-567895",
     achievements: [
@@ -176,7 +176,7 @@ const coaches: Coach[] = [
     experience: "9 years in player development",
     specialties: ["Technical Skills", "Tactical Awareness", "Game Intelligence", "Player Assessment"],
     ageGroups: ["10-16 years", "Advanced Development"],
-    imageUrl: "/placeholder-image",
+    imageUrl: "/coaches-profile-david-martinez-400x400-football-development-coach.png",
     email: "david.martinez@tssmultisports.com",
     phone: "+44-1234-567896",
     achievements: [
@@ -369,9 +369,11 @@ export default function CoachPage({ params }: CoachPageProps) {
                     <div className="bg-background rounded-lg shadow-md p-6 sticky top-6 border">
                       {/* Contact Info */}
                       <div className="text-center mb-6">
-                        <div className="w-24 h-24 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                          <Users className="h-12 w-12 text-primary" />
-                        </div>
+                        <img
+                          src={coach.imageUrl}
+                          alt={`${coach.name} Profile`}
+                          className="w-24 h-24 rounded-full object-cover mx-auto mb-4"
+                        />
                         <h3 className="text-xl font-semibold mb-2">{coach.name}</h3>
                         <p className="text-primary font-medium mb-4">{coach.title}</p>
                         

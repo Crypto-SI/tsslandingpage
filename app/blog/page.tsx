@@ -17,7 +17,7 @@ export default function BlogPage() {
       category: "Football Development",
       tags: ["football skills", "youth coaching", "training drills"],
       featured: true,
-      image: "/images/blog/skills-training.jpg"
+      image: "/blog-article-football-skills-training-800x450-essential-techniques.png"
     },
     {
       id: 2,
@@ -29,7 +29,7 @@ export default function BlogPage() {
       category: "Parent Resources",
       tags: ["after school programs", "child development", "sports benefits"],
       featured: true,
-      image: "/images/blog/after-school-benefits.jpg"
+      image: "/blog-article-after-school-benefits-800x450-child-development.png"
     },
     {
       id: 3,
@@ -41,7 +41,7 @@ export default function BlogPage() {
       category: "Walking Football",
       tags: ["walking football", "senior health", "low-impact exercise"],
       featured: false,
-      image: "/images/blog/walking-football.jpg"
+      image: "/blog-article-walking-football-800x450-senior-health-benefits.png"
     },
     {
       id: 4,
@@ -53,7 +53,7 @@ export default function BlogPage() {
       category: "Toddler Football",
       tags: ["toddler sports", "early development", "confidence building"],
       featured: false,
-      image: "/images/blog/toddler-football.jpg"
+      image: "/blog-article-toddler-football-800x450-confidence-building.png"
     },
     {
       id: 5,
@@ -65,7 +65,7 @@ export default function BlogPage() {
       category: "Holiday Programs",
       tags: ["holiday camps", "football activities", "school holidays"],
       featured: false,
-      image: "/images/blog/holiday-camps.jpg"
+      image: "/blog-article-holiday-camps-800x450-what-to-expect.png"
     },
     {
       id: 6,
@@ -77,7 +77,7 @@ export default function BlogPage() {
       category: "Parent Resources",
       tags: ["program selection", "child sports", "football coaching"],
       featured: false,
-      image: "/images/blog/choosing-program.jpg"
+      image: "/blog-article-choosing-program-800x450-expert-advice.png"
     }
   ];
 
@@ -114,7 +114,7 @@ export default function BlogPage() {
         ]}
         ogTitle="TSS Multisports Blog"
         ogDescription="Expert articles and tips on football coaching, child development, sports programs, and community sports."
-        ogImage="/images/blog/blog-featured.jpg"
+        ogImage="/blog-hero-1920x800-football-coaching-tips.png"
         canonicalUrl="/blog"
         breadcrumbs={[
           {
@@ -161,8 +161,18 @@ export default function BlogPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
               {blogPosts.filter(post => post.featured).map((post) => (
                 <Card key={post.id} className="h-full overflow-hidden">
-                  <div className="aspect-video bg-gradient-to-br from-red-400 to-red-600 flex items-center justify-center">
-                    <div className="text-white text-4xl font-bold">{post.title.charAt(0)}</div>
+                  <div className="aspect-video overflow-hidden rounded-lg">
+                    {post.image ? (
+                      <img
+                        src={post.image}
+                        alt={post.title}
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <div className="w-full h-full bg-gradient-to-br from-red-400 to-red-600 flex items-center justify-center">
+                        <div className="text-white text-4xl font-bold">{post.title.charAt(0)}</div>
+                      </div>
+                    )}
                   </div>
                   <CardHeader>
                     <div className="flex items-center gap-2 mb-2">
@@ -209,8 +219,18 @@ export default function BlogPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {blogPosts.map((post) => (
                 <Card key={post.id} className="h-full hover:shadow-lg transition-shadow">
-                  <div className="aspect-video bg-gradient-to-br from-red-400 to-red-600 flex items-center justify-center">
-                    <div className="text-white text-2xl font-bold">{post.title.charAt(0)}</div>
+                  <div className="aspect-video overflow-hidden rounded-lg">
+                    {post.image ? (
+                      <img
+                        src={post.image}
+                        alt={post.title}
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <div className="w-full h-full bg-gradient-to-br from-red-400 to-red-600 flex items-center justify-center">
+                        <div className="text-white text-2xl font-bold">{post.title.charAt(0)}</div>
+                      </div>
+                    )}
                   </div>
                   <CardHeader>
                     <div className="flex items-center gap-2 mb-2">

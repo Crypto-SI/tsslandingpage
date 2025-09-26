@@ -52,7 +52,7 @@ export default function HomePage() {
         ]}
         ogTitle="TSS Multisports Holiday Club"
         ogDescription="Fun and engaging sports activities for children of all ages and abilities during school holidays."
-        ogImage="/images/og-default.jpg"
+        ogImage="/home-hero-banner-1920x1080-football-children-playing.png"
         canonicalUrl="/"
         publishedTime="2025-09-20T00:00:00+00:00"
         modifiedTime="2025-09-20T00:00:00+00:00"
@@ -137,8 +137,8 @@ export default function HomePage() {
           name: "TSS Multisports",
           description: "Professional football coaching and multisports programs for children and seniors in Sportsville, UK",
           url: "https://tssmultisports.com",
-          logo: "/images/logo.png",
-          image: "/images/club-image.jpg",
+          logo: "/logo-400x400-tss-multisports.png",
+          image: "/club-image-1920x1080-facility-overview.png",
           address: {
             streetAddress: "123 Sports Avenue",
             addressLocality: "Sportsville",
@@ -201,8 +201,8 @@ export default function HomePage() {
           name: "TSS Multisports",
           description: "Professional football coaching and multisports programs for children and seniors in Sportsville, UK",
           url: "https://tssmultisports.com",
-          logo: "/images/logo.png",
-          image: "/images/club-image.jpg",
+          logo: "/logo-400x400-tss-multisports.png",
+          image: "/club-image-1920x1080-facility-overview.png",
           address: {
             streetAddress: "123 Sports Avenue",
             addressLocality: "Sportsville",
@@ -278,8 +278,8 @@ export default function HomePage() {
           name: "TSS Multisports",
           description: "Professional football coaching and multisports programs for children and seniors in Sportsville, UK",
           url: "https://tssmultisports.com",
-          logo: "/images/logo.png",
-          image: "/images/club-image.jpg",
+          logo: "/logo-400x400-tss-multisports.png",
+          image: "/club-image-1920x1080-facility-overview.png",
           address: {
             streetAddress: "123 Sports Avenue",
             addressLocality: "Sportsville",
@@ -370,8 +370,12 @@ export default function HomePage() {
             </div>
           </div>
           <div className="md:w-1/2 flex justify-center">
-            <div className="w-full max-w-md aspect-square rounded-lg overflow-hidden shadow-xl bg-gradient-to-br from-red-400 to-red-600 flex items-center justify-center">
-              <div className="text-white text-7xl font-bold">TSS</div>
+            <div className="w-full max-w-md aspect-square rounded-lg overflow-hidden shadow-xl">
+              <img
+                src="/home-hero-banner-1920x1080-football-children-playing.png"
+                alt="Children playing football at TSS Multisports"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
@@ -385,7 +389,21 @@ export default function HomePage() {
             {offerItems.map((item, index) => (
               <Card key={item.title} className="h-full">
                 <CardHeader>
-                  <div className="mb-4">{item.icon}</div>
+                  <div className="mb-4 flex justify-center">
+                    <img
+                      src={
+                        item.title === "Varied Sports"
+                          ? "/home-feature-calendar-400x400-icon-schedule.png"
+                          : item.title === "Expert Coaches"
+                          ? "/home-feature-users-400x400-expert-coaches.png"
+                          : item.title === "Safe Environment"
+                          ? "/home-feature-shield-400x400-safe-environment.png"
+                          : "/home-feature-award-400x400-all-abilities-welcome.png"
+                      }
+                      alt={`${item.title} icon`}
+                      className="w-16 h-16 object-contain"
+                    />
+                  </div>
                   <CardTitle>{item.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -406,7 +424,11 @@ export default function HomePage() {
             <Card className="h-full">
               <CardHeader>
                 <div className="mb-4">
-                  <Crown className="h-12 w-12 text-red-600" />
+                  <img
+                    src="/home-program-after-school-800x600-football-training.png"
+                    alt="After School Football"
+                    className="w-full h-48 object-cover rounded-lg"
+                  />
                 </div>
                 <CardTitle>After School Football</CardTitle>
                 <CardDescription className="text-lg">
@@ -437,7 +459,11 @@ export default function HomePage() {
             <Card className="h-full">
               <CardHeader>
                 <div className="mb-4">
-                  <Users2 className="h-12 w-12 text-red-600" />
+                  <img
+                    src="/home-program-walking-800x600-senior-football.png"
+                    alt="Walking Football"
+                    className="w-full h-48 object-cover rounded-lg"
+                  />
                 </div>
                 <CardTitle>Walking Football</CardTitle>
                 <CardDescription className="text-lg">
@@ -468,7 +494,11 @@ export default function HomePage() {
             <Card className="h-full">
               <CardHeader>
                 <div className="mb-4">
-                  <Baby className="h-12 w-12 text-red-600" />
+                  <img
+                    src="/home-program-toddler-800x600-parent-child-football.png"
+                    alt="Football for Toddlers"
+                    className="w-full h-48 object-cover rounded-lg"
+                  />
                 </div>
                 <CardTitle>Football for Toddlers</CardTitle>
                 <CardDescription className="text-lg">

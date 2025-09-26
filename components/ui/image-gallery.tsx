@@ -57,8 +57,19 @@ export default function ImageGallery({ images, title = "Program Gallery" }: Imag
                 className="aspect-square bg-muted relative overflow-hidden"
                 onClick={() => openLightbox(image.id, index)}
               >
-                {/* Placeholder for image */}
-                <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary/20 to-primary/5">
+                {/* Actual image */}
+                <img
+                  src={image.id.includes('-') ? `/${image.id}.png` : `/images/${image.id}.png`}
+                  alt={image.alt}
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    const img = e.currentTarget as HTMLImageElement;
+                    img.style.display = 'none';
+                    const placeholder = img.parentElement!.querySelector('.image-placeholder') as HTMLElement;
+                    if (placeholder) placeholder.style.display = 'flex';
+                  }}
+                />
+                <div className="image-placeholder w-full h-full flex items-center justify-center bg-gradient-to-br from-primary/20 to-primary/5 hidden">
                   <div className="text-center">
                     <ZoomIn className="h-12 w-12 text-primary/60 mx-auto mb-2" />
                     <p className="text-sm text-muted-foreground">Program Image</p>
@@ -118,12 +129,25 @@ export default function ImageGallery({ images, title = "Program Gallery" }: Imag
 
               {/* Image */}
               <div className="aspect-video bg-muted flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-24 h-24 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <ZoomIn className="h-12 w-12 text-primary" />
+                <img
+                  src={currentImage.id.includes('-') ? `/${currentImage.id}.png` : `/images/${currentImage.id}.png`}
+                  alt={currentImage.alt}
+                  className="w-full h-full object-contain"
+                  onError={(e) => {
+                    const img = e.currentTarget as HTMLImageElement;
+                    img.style.display = 'none';
+                    const placeholder = img.parentElement!.querySelector('.lightbox-placeholder') as HTMLElement;
+                    if (placeholder) placeholder.style.display = 'flex';
+                  }}
+                />
+                <div className="lightbox-placeholder w-full h-full flex items-center justify-center bg-gradient-to-br from-primary/20 to-primary/5 hidden">
+                  <div className="text-center">
+                    <div className="w-24 h-24 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <ZoomIn className="h-12 w-12 text-primary" />
+                    </div>
+                    <p className="text-white text-lg font-medium">{currentImage.alt}</p>
+                    <p className="text-white/70 text-sm mt-2">{currentImage.caption}</p>
                   </div>
-                  <p className="text-white text-lg font-medium">{currentImage.alt}</p>
-                  <p className="text-white/70 text-sm mt-2">{currentImage.caption}</p>
                 </div>
               </div>
 

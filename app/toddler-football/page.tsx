@@ -14,21 +14,21 @@ const videos = [
     id: "1",
     title: "Toddler Football Fun Session",
     description: "Watch our little ones enjoy their first football experience with age-appropriate activities and games.",
-    thumbnail: "/placeholder-image",
+    thumbnail: "/toddler-video-thumbnail-400x300-introduction.png",
     duration: "3:20"
   },
   {
     id: "2", 
     title: "Parent & Toddler Activities",
     description: "See how parents participate in helping their children develop coordination and social skills through football.",
-    thumbnail: "/placeholder-image",
+    thumbnail: "/toddler-video-thumbnail-400x300-fun-activities.png",
     duration: "2:50"
   },
   {
     id: "3",
     title: "Early Development Benefits",
     description: "Learn about the physical and cognitive benefits of early football participation for toddlers.",
-    thumbnail: "/placeholder-image",
+    thumbnail: "/toddler-video-thumbnail-400x300-parent-participation.png",
     duration: "4:10"
   }
 ]
@@ -38,37 +38,43 @@ const images = [
     id: "1",
     alt: "Toddlers playing with footballs",
     caption: "Fun introduction to football fundamentals",
-    category: "Fun"
+    category: "Fun",
+    src: "/toddler-development-coordination-600x400-motor-skills.png"
   },
   {
     id: "2",
     alt: "Parent helping child with football drill",
     caption: "Parent participation builds confidence and bonding",
-    category: "Parenting"
+    category: "Parenting",
+    src: "/toddler-development-coordination-600x400-motor-skills.png"
   },
   {
     id: "3",
     alt: "Group of toddlers playing games",
     caption: "Developing social skills through play",
-    category: "Social"
+    category: "Social",
+    src: "/toddler-development-coordination-600x400-motor-skills.png"
   },
   {
     id: "4",
     alt: "Toddler celebrating a goal",
     caption: "Building confidence and achievement",
-    category: "Achievement"
+    category: "Achievement",
+    src: "/toddler-development-coordination-600x400-motor-skills.png"
   },
   {
     id: "5",
     alt: "Coaching toddlers with colorful equipment",
     caption: "Age-appropriate coaching methods",
-    category: "Coaching"
+    category: "Coaching",
+    src: "/toddler-development-coordination-600x400-motor-skills.png"
   },
   {
     id: "6",
     alt: "Happy toddlers with certificates",
     caption: "Celebrating participation and progress",
-    category: "Celebration"
+    category: "Celebration",
+    src: "/toddler-development-coordination-600x400-motor-skills.png"
   }
 ]
 
@@ -192,7 +198,7 @@ export default function ToddlerFootballPage() {
         ]}
         ogTitle="Football for Toddlers | Ages 3-5"
         ogDescription="Fun introduction to football fundamentals with age-appropriate activities for toddlers aged 3-5."
-        ogImage="/images/toddler-football.jpg"
+        ogImage="/toddler-hero-1920x800-parent-child-football.png"
         canonicalUrl="/toddler-football"
         publishedTime="2025-09-20T00:00:00+00:00"
         modifiedTime="2025-09-20T00:00:00+00:00"
@@ -281,8 +287,8 @@ export default function ToddlerFootballPage() {
           name: "TSS Multisports",
           description: "Professional football coaching and multisports programs for children and seniors in Sportsville, UK",
           url: "https://tssmultisports.com",
-          logo: "/images/logo.png",
-          image: "/images/club-image.jpg",
+          logo: "/toddler-hero-1920x800-parent-child-football.png",
+          image: "/toddler-hero-1920x800-parent-child-football.png",
           address: {
             streetAddress: "123 Sports Avenue",
             addressLocality: "Sportsville",
@@ -357,8 +363,8 @@ export default function ToddlerFootballPage() {
               className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6"
             />
             
-            <AnimatedComponent 
-              animation="fadeIn" 
+            <AnimatedComponent
+              animation="fadeIn"
               delay={0.3}
               className="text-xl text-muted-foreground mb-8"
             >
@@ -377,6 +383,17 @@ export default function ToddlerFootballPage() {
                 </button>
               </Link>
             </div>
+          </div>
+        </div>
+        
+        {/* Hero Image */}
+        <div className="container mx-auto px-4 mt-12">
+          <div className="max-w-4xl mx-auto">
+            <img
+              src="/toddler-hero-1920x800-parent-child-football.png"
+              alt="Parent and Child Football Session"
+              className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg"
+            />
           </div>
         </div>
       </section>
