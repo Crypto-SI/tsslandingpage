@@ -39,42 +39,42 @@ const images = [
     alt: "Group of seniors playing walking football",
     caption: "Friendly walking football match with emphasis on fun and fitness",
     category: "Matches",
-    src: "/walking-benefit-social-600x400-seniors-group.png"
+    src: "/walking-benefit-social-600x400-friendship.png"
   },
   {
     id: "2",
     alt: "Participants socializing after game",
     caption: "Building friendships and community connections",
     category: "Social",
-    src: "/walking-benefit-social-600x400-seniors-group.png"
+    src: "/walking-benefit-social-600x400-friendship.png"
   },
   {
     id: "3",
     alt: "Walking football coaching session",
     caption: "Professional guidance for safe and enjoyable play",
     category: "Coaching",
-    src: "/walking-benefit-social-600x400-seniors-group.png"
+    src: "/walking-benefit-social-600x400-friendship.png"
   },
   {
     id: "4",
     alt: "Team celebrating a goal",
     caption: "Celebrating achievements in a supportive environment",
     category: "Fun",
-    src: "/walking-benefit-social-600x400-seniors-group.png"
+    src: "/walking-benefit-social-600x400-friendship.png"
   },
   {
     id: "5",
     alt: "Walking football equipment",
     caption: "Specialized equipment for safe play",
     category: "Equipment",
-    src: "/walking-benefit-social-600x400-seniors-group.png"
+    src: "/walking-benefit-social-600x400-friendship.png"
   },
   {
     id: "6",
     alt: "Group photo of participants",
     caption: "Our walking football community",
     category: "Community",
-    src: "/walking-benefit-social-600x400-seniors-group.png"
+    src: "/walking-benefit-social-600x400-friendship.png"
   }
 ]
 
@@ -198,7 +198,7 @@ export default function WalkingFootballPage() {
         ]}
         ogTitle="Walking Football | Ages 50+"
         ogDescription="Low-impact football perfect for maintaining fitness and enjoying social sport for ages 50+."
-        ogImage="/walking-hero-1920x800-senior-football-group.png"
+        ogImage="/walking-hero-1920x800-senior-football.png"
         canonicalUrl="/walking-football"
         publishedTime="2025-09-20T00:00:00+00:00"
         modifiedTime="2025-09-20T00:00:00+00:00"
@@ -287,8 +287,8 @@ export default function WalkingFootballPage() {
           name: "TSS Multisports",
           description: "Professional football coaching and multisports programs for children and seniors in Sportsville, UK",
           url: "https://tssmultisports.com",
-          logo: "/walking-hero-1920x800-senior-football-group.png",
-          image: "/walking-hero-1920x800-senior-football-group.png",
+          logo: "/walking-hero-1920x800-senior-football.png",
+          image: "/walking-hero-1920x800-senior-football.png",
           address: {
             streetAddress: "123 Sports Avenue",
             addressLocality: "Sportsville",
@@ -390,7 +390,7 @@ export default function WalkingFootballPage() {
         <div className="container mx-auto px-4 mt-12">
           <div className="max-w-4xl mx-auto">
             <img
-              src="/walking-hero-1920x800-senior-football-group.png"
+              src="/walking-hero-1920x800-senior-football.png"
               alt="Senior Walking Football Group"
               className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg"
             />

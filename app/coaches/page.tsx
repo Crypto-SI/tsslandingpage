@@ -42,7 +42,7 @@ const coaches: Coach[] = [
     experience: "10+ years coaching youth football",
     specialties: ["Football Development", "Tactical Awareness", "Goalkeeping", "Mental Resilience"],
     ageGroups: ["5-12 years", "13-16 years", "Adults"],
-    imageUrl: "/coach-sarah-johnson-400x400-head-coach.png",
+    imageUrl: "/coach-sarah-johnson-400x500-portrait-professional.png",
     email: "sarah.johnson@tssmultisports.com",
     phone: "+44-1234-567891",
     achievements: [
@@ -69,7 +69,7 @@ const coaches: Coach[] = [
     experience: "6 years specializing in toddler football",
     specialties: ["Early Development", "Parent Participation", "Coordination Skills", "Social Development"],
     ageGroups: ["3-5 years", "Parent & Toddler"],
-    imageUrl: "/coach-emma-wilson-400x400-toddler-specialist.png",
+    imageUrl: "/coach-emma-wilson-400x500-portrait-professional.png",
     email: "emma.wilson@tssmultisports.com",
     phone: "+44-1234-567892",
     achievements: [
@@ -96,7 +96,7 @@ const coaches: Coach[] = [
     experience: "8 years in senior football coaching",
     specialties: ["Low-Impact Exercise", "Social Connection", "Health Benefits", "Inclusive Coaching"],
     ageGroups: ["50+ years", "Senior Groups"],
-    imageUrl: "/coach-john-davis-400x400-walking-football-coordinator.png",
+    imageUrl: "/coach-john-davis-400x500-portrait-professional.png",
     email: "john.davis@tssmultisports.com",
     phone: "+44-1234-567893",
     achievements: [
@@ -123,7 +123,7 @@ const coaches: Coach[] = [
     experience: "7 years multisports coaching",
     specialties: ["Multisports Development", "Physical Literacy", "Athletic Fundamentals", "Game Sense Approach"],
     ageGroups: ["5-12 years", "Holiday Programs"],
-    imageUrl: "/coach-michael-chen-400x400-multisports-coach.png",
+    imageUrl: "/coach-james-wilson-400x500-portrait-professional.png",
     email: "michael.chen@tssmultisports.com",
     phone: "+44-1234-567894",
     achievements: [
@@ -150,7 +150,7 @@ const coaches: Coach[] = [
     experience: "12 years goalkeeping coaching",
     specialties: ["Shot Stopping", "Distribution", "Command of Area", "Mental Toughness", "Footwork"],
     ageGroups: ["8-16 years", "Advanced Goalkeepers"],
-    imageUrl: "/coach-lisa-thompson-400x400-goalkeeping-specialist.png",
+    imageUrl: "/coach-lisa-williams-400x500-portrait-professional.png",
     email: "lisa.thompson@tssmultisports.com",
     phone: "+44-1234-567895",
     achievements: [
@@ -177,7 +177,7 @@ const coaches: Coach[] = [
     experience: "9 years in player development",
     specialties: ["Technical Skills", "Tactical Awareness", "Game Intelligence", "Player Assessment"],
     ageGroups: ["10-16 years", "Advanced Development"],
-    imageUrl: "/coach-david-martinez-400x400-development-coach.png",
+    imageUrl: "/coach-anton-jacob-400x500-portrait-professional.png",
     email: "david.martinez@tssmultisports.com",
     phone: "+44-1234-567896",
     achievements: [
@@ -245,7 +245,7 @@ const CoachCard = ({ coach }: { coach: Coach }) => {
         <div className="flex items-start gap-4 mb-4">
           <div className="w-20 h-20 rounded-full overflow-hidden flex-shrink-0">
             <img
-              src={coach.imageUrl || "/coaches-profile-400x400-sarah-johnson-head-coach.png"}
+              src={coach.imageUrl || "/coach-sarah-johnson-400x500-portrait-professional.png"}
               alt={coach.name}
               className="w-full h-full object-cover"
             />
@@ -351,7 +351,7 @@ export default function CoachesPage() {
         ]}
         ogTitle="Our Coaches | TSS Multisports"
         ogDescription="Meet our team of qualified, experienced coaches dedicated to developing young talent and promoting sports participation."
-        ogImage="/coaches-hero-1920x800-team-professional-coaches.png"
+        ogImage="/coaches-hero-1920x800-coaching-team.png"
         canonicalUrl="/coaches"
         publishedTime="2025-09-20T00:00:00+00:00"
         modifiedTime="2025-09-20T00:00:00+00:00"
@@ -441,7 +441,7 @@ export default function CoachesPage() {
           <div className="container mx-auto px-4 mt-12">
             <div className="max-w-4xl mx-auto">
               <img
-                src="/coaches-hero-1920x800-team-professional-coaches.png"
+                src="/coaches-hero-1920x800-coaching-team.png"
                 alt="Professional Coaching Team"
                 className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg"
               />

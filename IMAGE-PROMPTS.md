@@ -8,48 +8,48 @@ This document contains individual prompts for every image required for the TSS M
 ## 1. Home Page (`/`)
 
 ### 1.1 Hero Section
-**Filename**: `home-hero-banner-1920x1080-football-children-playing.jpg`  
-**Size**: 1920x1080px  
-**Format**: JPEG  
+**Filename**: `home-hero-banner-1920x1080-football-children-playing.png` ✅
+**Size**: 1920x1080px
+**Format**: JPEG
 **Prompt**: "Professional sports photography of diverse group of children aged 6-12 playing football on a green grass field, bright daylight, action shot showing teamwork and fun, high quality, vibrant colors, shallow depth of field, children in football kits, focused on ball movement, dynamic composition, professional sports photography style"
 
 ### 1.2 Feature Icons
 
-**Filename**: `home-feature-calendar-400x400-sports-activities.jpg`
+**Filename**: `home-feature-calendar-400x400-icon-schedule.png` ✅
 **Size**: 400x400px
 **Format**: PNG
 **Prompt**: "Simple flat icon design of calendar with football schedule, clean vector illustration, sports program planning, minimalist sports icon, calendar with football symbols, organized schedule icon, professional sports management, clean background, scalable design, modern UI icon, sports planning symbol"
 
-**Filename**: `home-feature-users-400x400-expert-coaches.png`
+**Filename**: `home-feature-users-400x400-expert-coaches.png` ✅
 **Size**: 400x400px
 **Format**: PNG
 **Prompt**: "Simple flat icon design of group of people representing coaching team, clean vector illustration, sports coaching icon, teamwork symbol, professional coaches icon, mentorship symbol, minimalist sports icon, clean background, scalable design, modern UI icon, community coaching symbol"
 
-**Filename**: `home-feature-shield-400x400-safe-environment.png`
+**Filename**: `home-feature-shield-400x400-safe-environment.png` ✅
 **Size**: 400x400px
 **Format**: PNG
 **Prompt**: "Simple flat icon design of shield with safety checkmark, clean vector illustration, safety and security icon, protection symbol, safe environment icon, child safety symbol, minimalist sports icon, clean background, scalable design, modern UI icon, safety assurance symbol"
 
-**Filename**: `home-feature-award-400x400-all-abilities-welcome.png`
+**Filename**: `home-feature-award-400x400-all-abilities-welcome.png` ✅
 **Size**: 400x400px
 **Format**: PNG
 **Prompt**: "Simple flat icon design of trophy with diverse human figures, clean vector illustration, achievement and inclusion icon, all abilities welcome symbol, diversity in sports, inclusive sports icon, minimalist sports icon, clean background, scalable design, modern UI icon, equal opportunity symbol"
 
 ### 1.3 Program Cards
 
-**Filename**: `home-program-after-school-800x600-football-training.png`  
-**Size**: 800x600px  
-**Format**: JPEG  
+**Filename**: `home-program-after-school-800x600-football-training.png` ✅
+**Size**: 800x600px
+**Format**: JPEG
 **Prompt**: "After school football training session, children aged 8-12 practicing drills with coach, outdoor pitch, afternoon light, focused skill development, coach demonstrating proper technique, children practicing in small groups, professional coaching environment, green grass field, sports equipment visible"
 
-**Filename**: `home-program-toddler-800x600-parent-child-football.png`  
-**Size**: 800x600px  
-**Format**: PNG  
+**Filename**: `home-program-toddler-800x600-parent-child-football.png` ✅
+**Size**: 800x600px
+**Format**: PNG
 **Prompt**: "Parent and toddler football class, children aged 3-5 with parents, fun introduction to football, indoor facility, smiling faces, parent-child interaction, basic football skills, colorful training equipment, safe and welcoming environment, early childhood sports development"
 
-**Filename**: `home-program-walking-800x600-senior-football.png`  
-**Size**: 800x600px  
-**Format**: JPEG  
+**Filename**: `home-program-walking-800x600-senior-football.png` ✅
+**Size**: 800x600px
+**Format**: JPEG
 **Prompt**: "Walking football session for seniors aged 50+, gentle gameplay, social interaction, inclusive sports community, seniors playing football at walking pace, friendly competition, supportive environment, outdoor pitch, low-impact exercise, healthy aging, community bonding"
 
 ---
@@ -57,37 +57,37 @@ This document contains individual prompts for every image required for the TSS M
 ## 2. After School Football Page (`/after-school-football`)
 
 ### 2.1 Hero Section
-**Filename**: `after-school-hero-1920x800-children-football-training.png`  
-**Size**: 1920x800px  
-**Format**: JPEG  
+**Filename**: `after-school-hero-1920x800-children-football-training.png` ✅
+**Size**: 1920x800px
+**Format**: JPEG
 **Prompt**: "After school football training session, diverse group of children aged 5-12 practicing passing drills, outdoor sports facility, afternoon sunlight, professional coaching environment, children in organized drills, coach supervising, focused skill development, green pitch, sports equipment, team training atmosphere"
 
 ### 2.2 Program Benefits
 
-**Filename**: `after-school-benefit-skills-600x400-football-technique.png`  
-**Size**: 600x400px  
-**Format**: png 
+**Filename**: `after-school-benefit-skills-600x400-football-technique.png` ✅
+**Size**: 600x400px
+**Format**: png
 **Prompt**: "Close-up of football coach teaching proper technique to child, focused instruction, skill development, outdoor training, coach demonstrating dribbling technique, child practicing under guidance, professional sports coaching, one-on-one attention, skill progression, natural lighting"
 
-**Filename**: `after-school-benefit-teamwork-600x400-children-team.png`  
-**Size**: 600x400px  
+**Filename**: `after-school-benefit-teamwork-600x400-children-team.png` ✅
+**Size**: 600x400px
 **Format**: png
 **Prompt**: "Children working together in football drill, passing practice, cooperation, positive team dynamics, group of children passing ball between them, communication during drill, supportive teammates, organized training session, outdoor sports facility, collaborative learning"
 
-**Filename**: `after-school-benefit-fitness-600x400-active-children.png`  
-**Size**: 600x400px  
+**Filename**: `after-school-benefit-fitness-600x400-active-children.png` ✅
+**Size**: 600x400px
 **Format**: png
 **Prompt**: "Active children running during football session, physical fitness, healthy lifestyle, energetic movement, children sprinting during drill, cardiovascular exercise, sports performance, physical development, outdoor training, professional sports environment, dynamic action shot"
 
-**Filename**: `after-school-benefit-confidence-600x400-children-smiling.png`  
-**Size**: 600x400px  
+**Filename**: `after-school-benefit-confidence-600x400-children-smiling.png` ✅
+**Size**: 600x400px
 **Format**: png
 **Prompt**: "Child scoring goal and celebrating, confidence building, achievement, positive reinforcement, happy child celebrating success, teammates cheering, personal accomplishment, sports psychology, positive emotions, team support, professional sports moment, genuine joy"
 
 ### 2.3 Schedule/Time Images
-**Filename**: `after-school-schedule-1200x400-time-management.png`  
-**Size**: 1200x400px  
-**Format**: png  
+**Filename**: `after-school-schedule-1200x400-time-management.png` ✅
+**Size**: 1200x400px
+**Format**: png
 **Prompt**: "Clock and calendar showing after school hours, children's football schedule, time management, organized planning, professional office setting with sports theme, clock showing 4-5:30 PM, calendar highlighting weekdays, organized schedule, planning tools, sports program management, professional business environment with sports elements"
 
 ---
@@ -95,37 +95,37 @@ This document contains individual prompts for every image required for the TSS M
 ## 3. Toddler Football Page (`/toddler-football`)
 
 ### 3.1 Hero Section
-**Filename**: `toddler-hero-1920x800-parent-child-football.jpg`  
-**Size**: 1920x800px  
-**Format**: JPEG  
+**Filename**: `toddler-hero-1920x800-parent-child-football.png` ✅
+**Size**: 1920x800px
+**Format**: JPEG
 **Prompt**: "Parent and toddler football class, young children aged 3-5 with parents, introduction to football basics, indoor sports hall, fun and educational environment, parent-child pairs practicing basic skills, colorful training equipment, safe and welcoming space, early childhood development, playful learning atmosphere, bright indoor lighting"
 
 ### 3.2 Development Areas
 
-**Filename**: `toddler-development-coordination-600x400-motor-skills.png`  
-**Size**: 600x400px  
-**Format**: png  
+**Filename**: `toddler-development-coordination-600x400-motor-skills.png` ✅
+**Size**: 600x400px
+**Format**: png
 **Prompt**: "Toddler practicing basic football movements, developing motor skills, balance and coordination, guided by parent, child learning to kick ball, parent providing gentle guidance, developing physical abilities, early childhood sports, safe indoor environment, colorful training aids, focused learning moment"
 
-**Filename**: `toddler-development-social-600x400-children-playing.jpg`  
+**Filename**: `toddler-development-social-600x400-children-playing.png` ✅
 **Size**: 600x400px  
 **Format**: JPEG  
 **Prompt**: "Group of toddlers playing together, social interaction, early childhood development, group activities, children sharing toys and equipment, parallel play, social skill development, peer interaction, safe supervised environment, colorful play area, developmental milestone, happy social interaction"
 
-**Filename**: `toddler-development-confidence-600x400-child-smiling.jpg`  
-**Size**: 600x400px  
-**Format**: JPEG  
+**Filename**: `toddler-development-confidence-600x400-child-smiling.png` ✅
+**Size**: 600x400px
+**Format**: JPEG
 **Prompt**: "Child successfully completing football drill, proud expression, confidence building, positive reinforcement, child showing achievement, parent providing praise, self-esteem development, early success experiences, positive reinforcement, supportive environment, genuine pride and accomplishment"
 
-**Filename**: `toddler-development-fun-600x400-playful-children.jpg`  
-**Size**: 600x400px  
-**Format**: JPEG  
+**Filename**: `toddler-development-fun-600x400-playful-children.png` ✅
+**Size**: 600x400px
+**Format**: JPEG
 **Prompt**: "Happy toddlers enjoying football activities, fun learning environment, play-based education, joyful moments, children laughing and playing, spontaneous fun, natural enjoyment, positive association with sports, playful atmosphere, carefree childhood experience, genuine happiness and excitement"
 
 ### 3.3 Parent Participation
-**Filename**: `toddler-parent-participation-800x600-family-sports.jpg`  
-**Size**: 800x600px  
-**Format**: JPEG  
+**Filename**: `toddler-parent-participation-800x600-family-sports.png` ✅
+**Size**: 800x600px
+**Format**: JPEG
 **Prompt**: "Parents actively participating in toddler football sessions, bonding through sports, family involvement, supportive environment, multi-generational activities, parents and children playing together, family sports time, parental engagement, child development support, intergenerational bonding, positive family interaction, community sports program"
 
 ---
@@ -133,35 +133,35 @@ This document contains individual prompts for every image required for the TSS M
 ## 4. Walking Football Page (`/walking-football`)
 
 ### 4.1 Hero Section
-**Filename**: `walking-hero-1920x800-senior-football.jpg`  
-**Size**: 1920x800px  
-**Format**: JPEG  
+**Filename**: `walking-hero-1920x800-senior-football.png` ✅
+**Size**: 1920x800px
+**Format**: JPEG
 **Prompt**: "Walking football session for seniors aged 50+, gentle gameplay, social interaction, inclusive sports community, outdoor pitch, friendly competition, seniors playing football at walking pace, supportive environment, team play, low-impact exercise, healthy aging, community sports program, positive social atmosphere"
 
 ### 4.2 Health Benefits
 
-**Filename**: `walking-benefit-fitness-600x400-active-seniors.jpg`  
+**Filename**: `walking-benefit-fitness-600x400-active-seniors.png` ✅
 **Size**: 600x400px  
 **Format**: JPEG  
 **Prompt**: "Active seniors participating in walking football, low-impact exercise, physical health, mobility maintenance, seniors moving at comfortable pace, gentle physical activity, health benefits, exercise for older adults, maintaining fitness, safe exercise, professional sports program for seniors, positive health outcomes"
 
-**Filename**: `walking-benefit-social-600x400-friendship.jpg`  
+**Filename**: `walking-benefit-social-600x400-friendship.png` ✅
 **Size**: 600x400px  
 **Format**: JPEG  
 **Prompt**: "Seniors socializing during walking football session, friendship building, community connection, group camaraderie, seniors chatting between plays, social interaction, community bonding, friendship development, combating isolation, positive social environment, group support system, meaningful relationships"
 
-**Filename**: `walking-benefit-mental-600x400-healthy-mind.jpg`  
+**Filename**: `walking-benefit-mental-600x400-healthy-mind.png` ✅
 **Size**: 600x400px  
 **Format**: JPEG  
 **Prompt**: "Seniors enjoying mental stimulation through walking football, cognitive benefits, healthy aging, positive mindset, focused gameplay, strategic thinking, mental engagement, cognitive exercise, brain health, mental stimulation, positive mental attitude, quality of life improvement"
 
-**Filename**: `walking-benefit-inclusive-600x400-diverse-group.jpg`  
+**Filename**: `walking-benefit-inclusive-600x400-diverse-group.png` ✅
 **Size**: 600x400px  
 **Format**: JPEG  
 **Prompt**: "Diverse group of seniors in walking football, inclusive sports, accessibility, all abilities welcome, participants of different fitness levels, supportive environment, adaptive sports, inclusive programming, community integration, equal participation, accessibility features, welcoming atmosphere for all seniors"
 
 ### 4.3 Community Aspect
-**Filename**: `walking-community-1200x400-social-connection.jpg`  
+**Filename**: `walking-community-1200x400-social-connection.png` ✅
 **Size**: 1200x400px  
 **Format**: JPEG  
 **Prompt**: "Walking football community gathering, social connection, post-match refreshments, friendship building, community integration, supportive environment, seniors socializing together, refreshments and conversation, community bonding, social support network, group cohesion, positive community atmosphere, inclusive sports community"
@@ -171,45 +171,45 @@ This document contains individual prompts for every image required for the TSS M
 ## 5. Coaches Page (`/coaches`)
 
 ### 5.1 Hero Section
-**Filename**: `coaches-hero-1920x800-coaching-team.jpg`  
+**Filename**: `coaches-hero-1920x800-coaching-team.png` ✅
 **Size**: 1920x800px  
 **Format**: JPEG  
 **Prompt**: "Professional football coaching team, diverse group of qualified coaches, sports equipment, professional sports environment, teamwork demonstration, coaches in professional attire, organized team, sports leadership, professional development, coaching expertise, collaborative coaching approach, high-quality sports facility"
 
 ### 5.2 Coach Profiles
 
-**Filename**: `coach-sarah-johnson-400x500-portrait-professional.jpg`  
+**Filename**: `coach-sarah-johnson-400x500-portrait-professional.png` ✅
 **Size**: 400x500px  
 **Format**: JPEG  
 **Prompt**: "Professional headshot of Sarah Johnson, female football coach, friendly approachable expression, sports coaching background, professional attire, confident posture, studio lighting, head and shoulders shot, professional sports coach, FA qualified, experienced coaching professional, positive and engaging demeanor"
 
-**Filename**: `coach-emma-wilson-400x500-portrait-professional.jpg`  
+**Filename**: `coach-emma-wilson-400x500-portrait-professional.png` ✅
 **Size**: 400x500px  
 **Format**: JPEG  
 **Prompt**: "Professional headshot of Emma Wilson, female football coach, friendly approachable expression, sports coaching background, professional attire, confident posture, studio lighting, head and shoulders shot, professional sports coach, early years specialist, toddler football expert, warm and caring coaching style"
 
-**Filename**: `coach-john-davis-400x500-portrait-professional.jpg`  
+**Filename**: `coach-john-davis-400x500-portrait-professional.png` ✅
 **Size**: 400x500px  
 **Format**: JPEG  
 **Prompt**: "Professional headshot of John Davis, male football coach, friendly approachable expression, sports coaching background, professional attire, confident posture, studio lighting, head and shoulders shot, professional sports coach, walking football coordinator, senior sports specialist, approachable and knowledgeable demeanor"
 
-**Filename**: `coach-james-wilson-400x500-portrait-professional.jpg`  
+**Filename**: `coach-james-wilson-400x500-portrait-professional.png` ✅
 **Size**: 400x500px  
 **Format**: JPEG  
 **Prompt**: "Professional headshot of James Wilson, male football coach, friendly approachable expression, sports coaching background, professional attire, confident posture, studio lighting, head and shoulders shot, professional sports coach, multisports specialist, physical education expert, energetic and enthusiastic coaching style"
 
-**Filename**: `coach-lisa-williams-400x500-portrait-professional.jpg`  
+**Filename**: `coach-lisa-williams-400x500-portrait-professional.png` ✅
 **Size**: 400x500px  
 **Format**: JPEG  
 **Prompt**: "Professional headshot of Lisa Williams, female football coach, friendly approachable expression, sports coaching background, professional attire, confident posture, studio lighting, head and shoulders shot, professional sports coach, goalkeeping specialist, technical skills expert, focused and detail-oriented coaching approach"
 
-**Filename**: `coach-anton-jacob-400x500-portrait-professional.jpg`  
+**Filename**: `coach-anton-jacob-400x500-portrait-professional.png` ✅
 **Size**: 400x500px  
 **Format**: JPEG  
 **Prompt**: "Professional headshot of Anton Jacob, male football coach, friendly approachable expression, sports coaching background, professional attire, confident posture, studio lighting, head and shoulders shot, professional sports coach, player development specialist, tactical awareness expert, analytical and methodical coaching style"
 
 ### 5.3 Coaching Philosophy
-**Filename**: `coaching-philosophy-1200x400-education.jpg`  
+**Filename**: `coaching-philosophy-1200x400-education.png` ✅
 **Size**: 1200x400px  
 **Format**: JPEG  
 **Prompt**: "Coaching philosophy diagram, educational approach, player development pathway, professional coaching methodology, structured training program, visual representation of coaching principles, educational framework, skill progression pathway, player development stages, coaching methodology, professional sports education, structured learning approach"
@@ -219,30 +219,30 @@ This document contains individual prompts for every image required for the TSS M
 ## 6. Events Page (`/events`)
 
 ### 6.1 Hero Section
-**Filename**: `events-hero-1920x800-calendar-sports.jpg`  
+**Filename**: `events-hero-1920x800-calendar-sports.png` ✅
 **Size**: 1920x800px  
 **Format**: JPEG  
 **Prompt**: "Sports events calendar, diverse football activities, organized schedule, professional sports management, event planning, community sports programs, calendar with highlighted events, multiple program types, organized time management, professional sports administration, community engagement, sports program variety"
 
 ### 6.2 Event Categories
 
-**Filename**: `events-regular-800x600-weekly-sessions.jpg`  
+**Filename**: `events-regular-800x600-weekly-sessions.png` ✅
 **Size**: 800x600px  
 **Format**: JPEG  
 **Prompt**: "Weekly football sessions, regular training schedule, consistent sports program, ongoing development, regular coaching sessions, consistent attendance, skill development routine, weekly sports activities, regular program participation, ongoing player development, consistent coaching environment, regular sports engagement"
 
-**Filename**: `events-special-800x600-tournaments.jpg`  
+**Filename**: `events-special-800x600-tournaments.png` ✅
 **Size**: 800x600px  
 **Format**: JPEG  
 **Prompt**: "Football tournaments, competitive events, match play, trophy presentations, celebration moments, competitive sports environment, match action, tournament atmosphere, competitive play, sports competition, achievement recognition, celebration events, professional tournament setting"
 
-**Filename**: `events-holiday-800x600-camps.jpg`  
+**Filename**: `events-holiday-800x600-camps.png` ✅
 **Size**: 800x600px  
 **Format**: JPEG  
 **Prompt**: "Holiday football camps, intensive training programs, school holiday activities, multi-sports fun, holiday program activities, intensive coaching sessions, multi-sports variety, holiday learning environment, school holiday programs, comprehensive sports education, fun holiday activities, professional holiday coaching"
 
 ### 6.3 Event Calendar
-**Filename**: `events-calendar-1200x400-schedule.jpg`  
+**Filename**: `events-calendar-1200x400-schedule.png` ✅
 **Size**: 1200x400px  
 **Format**: JPEG  
 **Prompt**: "Monthly sports events calendar, organized schedule, football programs, time management, professional planning, visual timeline, monthly event overview, organized time slots, program variety, sports scheduling, professional event management, clear time organization, comprehensive sports calendar"
@@ -252,7 +252,7 @@ This document contains individual prompts for every image required for the TSS M
 ## 7. Gallery Page (`/gallery`)
 
 ### 7.1 Hero Section
-**Filename**: `gallery-hero-1920x800-photo-collection.jpg`  
+**Filename**: `gallery-hero-1920x800-photo-collection.png` ✅
 **Size**: 1920x800px  
 **Format**: JPEG  
 **Prompt**: "Sports photo gallery collection, memorable moments, program highlights, visual storytelling, sports photography showcase, gallery of sports moments, program highlights, memorable experiences, visual documentation, sports photography collection, program achievements, visual storytelling through images"

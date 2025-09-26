@@ -81,7 +81,7 @@ const events: Event[] = [
     instructor: "Coach John Davis",
     requirements: ["Comfortable clothing", "Indoor/outdoor trainers", "Water bottle"],
     highlights: ["Health benefits", "Social connection", "Inclusive environment"],
-    imageUrl: "/walking-hero-1920x800-senior-football-group.png"
+    imageUrl: "/walking-hero-1920x800-senior-football.png"
   },
   {
     id: "4",
@@ -99,7 +99,7 @@ const events: Event[] = [
     instructor: "Coaching Team",
     requirements: ["Football kit", "Lunch", "Water bottle", "Sun protection"],
     highlights: ["5 days of coaching", "Match play", "Certificate", "Progress tracking"],
-    imageUrl: "/holiday-camp-hero-1920x800-children-football-fun.png"
+    imageUrl: "/events-holiday-800x600-camps.png"
   },
   {
     id: "5",
@@ -117,7 +117,7 @@ const events: Event[] = [
     instructor: "Tournament Director",
     requirements: ["Team kit", "Boots", "Shin pads", "Water bottle"],
     highlights: ["Trophies", "Professional refereeing", "Family entertainment", "Refreshments"],
-    imageUrl: "/tournament-hero-1920x800-children-competition.png"
+    imageUrl: "/events-special-800x600-tournaments.png"
   },
   {
     id: "6",
@@ -135,7 +135,7 @@ const events: Event[] = [
     instructor: "Coaching Team",
     requirements: ["Sports clothing", "Trainers", "Packed lunch", "Christmas spirit"],
     highlights: ["Christmas theme", "Multiple sports", "Prizes", "Hot chocolate"],
-    imageUrl: "/christmas-multisports-hero-1920x800-fun-activities.png"
+    imageUrl: "/events-regular-800x600-weekly-sessions.png"
   }
 ]
 
@@ -333,7 +333,7 @@ export default function EventsPage() {
         ]}
         ogTitle="Events & Sessions | TSS Multisports"
         ogDescription="Discover upcoming football sessions, holiday camps, tournaments, and special events at TSS Multisports."
-        ogImage="/events-hero-1920x800-calendar-sessions.png"
+        ogImage="/events-hero-1920x800-calendar-sports.png"
         canonicalUrl="/events"
         publishedTime="2025-09-20T00:00:00+00:00"
         modifiedTime="2025-09-20T00:00:00+00:00"

@@ -46,35 +46,35 @@ const images = [
     alt: "Parent helping child with football drill",
     caption: "Parent participation builds confidence and bonding",
     category: "Parenting",
-    src: "/toddler-development-coordination-600x400-motor-skills.png"
+    src: "/toddler-development-confidence-600x400-child-smiling.png"
   },
   {
     id: "3",
     alt: "Group of toddlers playing games",
     caption: "Developing social skills through play",
     category: "Social",
-    src: "/toddler-development-coordination-600x400-motor-skills.png"
+    src: "/toddler-development-social-600x400-children-playing.png"
   },
   {
     id: "4",
     alt: "Toddler celebrating a goal",
     caption: "Building confidence and achievement",
     category: "Achievement",
-    src: "/toddler-development-coordination-600x400-motor-skills.png"
+    src: "/toddler-development-confidence-600x400-child-smiling.png"
   },
   {
     id: "5",
     alt: "Coaching toddlers with colorful equipment",
     caption: "Age-appropriate coaching methods",
     category: "Coaching",
-    src: "/toddler-development-coordination-600x400-motor-skills.png"
+    src: "/toddler-development-fun-600x400-playful-children.png"
   },
   {
     id: "6",
     alt: "Happy toddlers with certificates",
     caption: "Celebrating participation and progress",
     category: "Celebration",
-    src: "/toddler-development-coordination-600x400-motor-skills.png"
+    src: "/toddler-development-fun-600x400-playful-children.png"
   }
 ]
 
