@@ -52,7 +52,7 @@ export default function HomePage() {
         ]}
         ogTitle="TSS Multisports Holiday Club"
         ogDescription="Fun and engaging sports activities for children of all ages and abilities during school holidays."
-        ogImage="/home-hero-banner-1920x1080-football-children-playing.png"
+        ogImage="/pics/coach-huddle-1.jpg"
         canonicalUrl="/"
         publishedTime="2025-09-20T00:00:00+00:00"
         modifiedTime="2025-09-20T00:00:00+00:00"
@@ -138,7 +138,7 @@ export default function HomePage() {
           description: "Professional football coaching and multisports programs for children and seniors in Sportsville, UK",
           url: "https://tssmultisports.com",
           logo: "/logo-400x400-tss-multisports.png",
-          image: "/club-image-1920x1080-facility-overview.png",
+          image: "/pics/field-drills-1.jpg",
           address: {
             streetAddress: "123 Sports Avenue",
             addressLocality: "Sportsville",
@@ -202,7 +202,7 @@ export default function HomePage() {
           description: "Professional football coaching and multisports programs for children and seniors in Sportsville, UK",
           url: "https://tssmultisports.com",
           logo: "/logo-400x400-tss-multisports.png",
-          image: "/club-image-1920x1080-facility-overview.png",
+          image: "/pics/field-drills-1.jpg",
           address: {
             streetAddress: "123 Sports Avenue",
             addressLocality: "Sportsville",
@@ -279,7 +279,7 @@ export default function HomePage() {
           description: "Professional football coaching and multisports programs for children and seniors in Sportsville, UK",
           url: "https://tssmultisports.com",
           logo: "/logo-400x400-tss-multisports.png",
-          image: "/club-image-1920x1080-facility-overview.png",
+          image: "/pics/field-drills-1.jpg",
           address: {
             streetAddress: "123 Sports Avenue",
             addressLocality: "Sportsville",
@@ -372,7 +372,7 @@ export default function HomePage() {
           <div className="md:w-1/2 flex justify-center">
             <div className="w-full max-w-md aspect-square rounded-lg overflow-hidden shadow-xl">
               <img
-                src="/home-hero-banner-1920x1080-football-children-playing.png"
+                src="/pics/coach-huddle-1.jpg"
                 alt="Children playing football at TSS Multisports"
                 className="w-full h-full object-cover"
               />
@@ -425,7 +425,7 @@ export default function HomePage() {
               <CardHeader>
                 <div className="mb-4">
                   <img
-                    src="/home-program-after-school-800x600-football-training.png"
+                    src="/pics/goal-lineup-1.jpg"
                     alt="After School Football"
                     className="w-full h-48 object-cover rounded-lg"
                   />
@@ -449,7 +449,7 @@ export default function HomePage() {
               <CardFooter>
                 <Link href="/after-school-football">
                   <Button className="w-full gap-2">
-                    Learn More <ArrowRight className="h-4 w-4" />
+                    Coming Soon <ArrowRight className="h-4 w-4" />
                   </Button>
                 </Link>
               </CardFooter>
@@ -460,7 +460,7 @@ export default function HomePage() {
               <CardHeader>
                 <div className="mb-4">
                   <img
-                    src="/home-program-walking-800x600-senior-football.png"
+                    src="/pics/coach-field-1.jpg"
                     alt="Walking Football"
                     className="w-full h-48 object-cover rounded-lg"
                   />
@@ -484,7 +484,7 @@ export default function HomePage() {
               <CardFooter>
                 <Link href="/walking-football">
                   <Button className="w-full gap-2">
-                    Learn More <ArrowRight className="h-4 w-4" />
+                    Coming Soon <ArrowRight className="h-4 w-4" />
                   </Button>
                 </Link>
               </CardFooter>
@@ -495,7 +495,7 @@ export default function HomePage() {
               <CardHeader>
                 <div className="mb-4">
                   <img
-                    src="/home-program-toddler-800x600-parent-child-football.png"
+                    src="/pics/toddler-cones-1.jpg"
                     alt="Football for Toddlers"
                     className="w-full h-48 object-cover rounded-lg"
                   />
@@ -519,7 +519,7 @@ export default function HomePage() {
               <CardFooter>
                 <Link href="/toddler-football">
                   <Button className="w-full gap-2">
-                    Learn More <ArrowRight className="h-4 w-4" />
+                    Coming Soon <ArrowRight className="h-4 w-4" />
                   </Button>
                 </Link>
               </CardFooter>
@@ -537,7 +537,7 @@ export default function HomePage() {
             Early registration receives a 10% discount!
           </p>
           <Button variant="secondary" size="lg">
-            Register Now
+            Coming Soon
           </Button>
         </div>
       </section>

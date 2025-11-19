@@ -42,24 +42,7 @@ export default function RegisterInterestPage() {
                 Join our football community and take the first step towards achieving your goals
               </AnimatedComponent>
             </div>
-          </div>
-          
-          {/* Hero Image */}
-          <div className="container mx-auto px-4 mt-8">
-            <div className="max-w-4xl mx-auto">
-              <img
-                src="/register-interest-hero-1920x800-football-registration.png"
-                alt="Football Registration"
-                className="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg"
-              />
-            </div>
-          </div>
-        </section>
-
-        {/* Registration Section */}
-        <section className="py-20 bg-background">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-4xl mx-auto mt-10">
               <AnimatedComponent animation="slideUp" delay={0.1}>
                 <div className="bg-white rounded-lg shadow-lg p-8 md:p-12">
                   <div className="text-center mb-12">
@@ -95,6 +78,7 @@ export default function RegisterInterestPage() {
               </AnimatedComponent>
             </div>
           </div>
+          
         </section>
 
         {/* Call to Action */}

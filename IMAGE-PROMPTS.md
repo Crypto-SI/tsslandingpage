@@ -112,14 +112,14 @@ This document contains individual prompts for every image required for the TSS M
 **Format**: JPEG  
 **Prompt**: "Group of toddlers playing together, social interaction, early childhood development, group activities, children sharing toys and equipment, parallel play, social skill development, peer interaction, safe supervised environment, colorful play area, developmental milestone, happy social interaction"
 
-**Filename**: `toddler-development-confidence-600x400-child-smiling.jpg`  
+**Filename**: `toddler-development-confidence-600x400-child-smiling.png`  
 **Size**: 600x400px  
-**Format**: JPEG  
+**Format**: png  
 **Prompt**: "Child successfully completing football drill, proud expression, confidence building, positive reinforcement, child showing achievement, parent providing praise, self-esteem development, early success experiences, positive reinforcement, supportive environment, genuine pride and accomplishment"
 
-**Filename**: `toddler-development-fun-600x400-playful-children.jpg`  
+**Filename**: `toddler-development-fun-600x400-playful-children.png`  
 **Size**: 600x400px  
-**Format**: JPEG  
+**Format**: png
 **Prompt**: "Happy toddlers enjoying football activities, fun learning environment, play-based education, joyful moments, children laughing and playing, spontaneous fun, natural enjoyment, positive association with sports, playful atmosphere, carefree childhood experience, genuine happiness and excitement"
 
 ### 3.3 Parent Participation
@@ -133,16 +133,16 @@ This document contains individual prompts for every image required for the TSS M
 ## 4. Walking Football Page (`/walking-football`)
 
 ### 4.1 Hero Section
-**Filename**: `walking-hero-1920x800-senior-football.jpg`  
+**Filename**: `walking-hero-1920x800-senior-football.png`  
 **Size**: 1920x800px  
-**Format**: JPEG  
+**Format**: png 
 **Prompt**: "Walking football session for seniors aged 50+, gentle gameplay, social interaction, inclusive sports community, outdoor pitch, friendly competition, seniors playing football at walking pace, supportive environment, team play, low-impact exercise, healthy aging, community sports program, positive social atmosphere"
 
 ### 4.2 Health Benefits
 
-**Filename**: `walking-benefit-fitness-600x400-active-seniors.jpg`  
+**Filename**: `walking-benefit-fitness-600x400-active-seniors.png`  
 **Size**: 600x400px  
-**Format**: JPEG  
+**Format**: png
 **Prompt**: "Active seniors participating in walking football, low-impact exercise, physical health, mobility maintenance, seniors moving at comfortable pace, gentle physical activity, health benefits, exercise for older adults, maintaining fitness, safe exercise, professional sports program for seniors, positive health outcomes"
 
 **Filename**: `walking-benefit-social-600x400-friendship.jpg`  

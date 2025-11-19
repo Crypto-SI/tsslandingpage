@@ -68,7 +68,7 @@ export default function PartnersPage() {
   const partnerships = [
     {
       name: "Bedford Town FC",
-      logo: "/partners-logo-bedford-town-400x400-semi-pro-club.png",
+      logo: "/bedford.png",
       link: "https://bedfordtownfc.co.uk",
       description: "Bedford Town FC are a semi-pro club who TSS runs courses on behalf of. This collaboration combines TSS's coaching expertise with Bedford Town's established football program to provide quality training and development opportunities.",
       type: "semi-pro-club",
@@ -76,7 +76,7 @@ export default function PartnersPage() {
     },
     {
       name: "Affillia Sports",
-      logo: "/partners-logo-affillia-sports-400x400-football-agency.png",
+      logo: "/affillia.png",
       link: "https://affilliasports.com",
       description: "Affillia Sports is an agency that offers exceptional players a pathway and optional free support with any future careers in the game. They provide professional guidance and opportunities for talented athletes to advance their football careers.",
       type: "agency",
@@ -84,11 +84,20 @@ export default function PartnersPage() {
     },
     {
       name: "Peterborough United FC",
-      logo: "/partners-logo-peterborough-united-400x400-professional-club.png",
+      logo: "/posh.webp",
       link: "https://theposh.com",
       description: "Peterborough United FC are a professional team that Anton Jacob, head coach at TSS, often recruits for. This partnership provides talented players with direct pathways to professional football opportunities.",
       type: "professional-club",
       focus: "player-recruitment"
+    },
+    {
+      name: "Webara Studio",
+      logo: "/webaralogo.png",
+      link: "https://webarastudio.com",
+      description:
+        "Webara Studio is the AI-focused digital design agency that crafted the TSS Multisports experience. Their team blends strategy, design, and emerging technology to deliver fast, beautiful digital products.",
+      type: "creative-agency",
+      focus: "digital-design"
     }
   ]
 
@@ -169,7 +178,7 @@ export default function PartnersPage() {
 
       <main className="min-h-screen bg-background">
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-b from-primary/10 to-background py-20">
+        <section className="relative bg-gradient-to-b from-primary/10 to-background pt-20 pb-10">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <Link href="/" className="inline-flex items-center gap-2 text-primary hover:text-primary/80 mb-6">
@@ -243,6 +252,7 @@ export default function PartnersPage() {
                           {partnership.type === 'agency' && 'Agency'}
                           {partnership.type === 'professional-club' && 'Professional Club'}
                           {partnership.type === 'semi-pro-club' && 'Semi-Pro Club'}
+                          {partnership.type === 'creative-agency' && 'Digital Design Agency'}
                         </span>
                       </div>
                     </div>

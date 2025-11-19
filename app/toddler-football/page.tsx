@@ -374,7 +374,7 @@ export default function ToddlerFootballPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="#register">
                 <button className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors">
-                  Register Now
+                  Coming Soon
                 </button>
               </Link>
               <Link href="#pricing">

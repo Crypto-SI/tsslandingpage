@@ -46,7 +46,7 @@ export function AnimatedText({
 
   return (
     <motion.div
-      className={`overflow-hidden flex flex-wrap ${className}`}
+      className={`overflow-hidden flex flex-wrap justify-center text-center ${className}`}
       variants={container}
       initial="hidden"
       whileInView="visible"

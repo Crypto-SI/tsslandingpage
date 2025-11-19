@@ -84,12 +84,12 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-4 border-t border-border flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm mb-4 md:mb-0">
+        <div className="mt-12 pt-4 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-sm mb-2 md:mb-0 text-center md:text-left">
             © {new Date().getFullYear()} TSS Multisports. All rights reserved.
           </p>
-          
-          <div className="flex space-x-4">
+
+          <div className="flex space-x-4 items-center">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-red-600">
               📘
             </a>
@@ -100,6 +100,20 @@ const Footer = () => {
               🐦
             </a>
           </div>
+
+          <a
+            href="https://webarastudio.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center"
+            aria-label="Built with love by Webara Studio"
+          >
+            <img
+              src="/webarabadge.png"
+              alt="Built with love by Webara Studio"
+              className="h-10 w-auto"
+            />
+          </a>
         </div>
       </div>
     </footer>

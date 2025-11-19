@@ -10,6 +10,7 @@ interface Image {
   alt: string
   caption: string
   category: string
+  src?: string
 }
 
 interface ImageGalleryProps {
@@ -42,6 +43,11 @@ export default function ImageGallery({ images, title = "Program Gallery" }: Imag
     setSelectedImage(images[newIndex].id)
   }
 
+  const getImageSrc = (image: Image) => {
+    if (image.src) return image.src
+    return image.id.includes("-") ? `/${image.id}.png` : `/images/${image.id}.png`
+  }
+
   const currentImage = images.find(img => img.id === selectedImage) || images[0]
 
   return (
@@ -59,7 +65,7 @@ export default function ImageGallery({ images, title = "Program Gallery" }: Imag
               >
                 {/* Actual image */}
                 <img
-                  src={image.id.includes('-') ? `/${image.id}.png` : `/images/${image.id}.png`}
+                  src={getImageSrc(image)}
                   alt={image.alt}
                   className="w-full h-full object-cover"
                   onError={(e) => {
@@ -130,7 +136,7 @@ export default function ImageGallery({ images, title = "Program Gallery" }: Imag
               {/* Image */}
               <div className="aspect-video bg-muted flex items-center justify-center">
                 <img
-                  src={currentImage.id.includes('-') ? `/${currentImage.id}.png` : `/images/${currentImage.id}.png`}
+                  src={getImageSrc(currentImage)}
                   alt={currentImage.alt}
                   className="w-full h-full object-contain"
                   onError={(e) => {

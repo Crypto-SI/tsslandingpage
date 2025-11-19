@@ -45,7 +45,7 @@ const events: Event[] = [
     instructor: "Coach Sarah Johnson",
     requirements: ["Sports clothing", "Trainers", "Water bottle"],
     highlights: ["Professional coaching", "Small group sizes", "Skill development"],
-    imageUrl: "/after-school-hero-1920x800-children-football-training.png"
+    imageUrl: "/pics/goal-friends-1.jpg"
   },
   {
     id: "2",
@@ -63,7 +63,7 @@ const events: Event[] = [
     instructor: "Coach Emma Wilson",
     requirements: ["Comfortable clothing", "Indoor trainers", "Parent participation"],
     highlights: ["Parent participation", "Coordination development", "Social skills"],
-    imageUrl: "/toddler-hero-1920x800-parent-child-football.png"
+    imageUrl: "/pics/parent-play-1.jpg"
   },
   {
     id: "3",
@@ -99,7 +99,7 @@ const events: Event[] = [
     instructor: "Coaching Team",
     requirements: ["Football kit", "Lunch", "Water bottle", "Sun protection"],
     highlights: ["5 days of coaching", "Match play", "Certificate", "Progress tracking"],
-    imageUrl: "/holiday-camp-hero-1920x800-children-football-fun.png"
+    imageUrl: "/pics/field-drills-1.jpg"
   },
   {
     id: "5",
@@ -117,7 +117,7 @@ const events: Event[] = [
     instructor: "Tournament Director",
     requirements: ["Team kit", "Boots", "Shin pads", "Water bottle"],
     highlights: ["Trophies", "Professional refereeing", "Family entertainment", "Refreshments"],
-    imageUrl: "/tournament-hero-1920x800-children-competition.png"
+    imageUrl: "/pics/cup-celebration-1.jpg"
   },
   {
     id: "6",
@@ -135,7 +135,7 @@ const events: Event[] = [
     instructor: "Coaching Team",
     requirements: ["Sports clothing", "Trainers", "Packed lunch", "Christmas spirit"],
     highlights: ["Christmas theme", "Multiple sports", "Prizes", "Hot chocolate"],
-    imageUrl: "/christmas-multisports-hero-1920x800-fun-activities.png"
+    imageUrl: "/pics/dodgeball-drill-1.jpg"
   }
 ]
 
@@ -281,10 +281,10 @@ const EventCard = ({ event }: { event: Event }) => {
 
         <div className="flex gap-2">
           <Link href={`/register?eventId=${event.id}`} className="flex-1 bg-primary text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-primary/90 transition-colors text-center">
-            Register Now
+            Coming Soon
           </Link>
           <Link href={`/events/${event.id}`} className="flex-1 border border-primary text-primary px-4 py-2 rounded-lg text-sm font-medium hover:bg-primary/10 transition-colors text-center">
-            View Details
+            Coming Soon
           </Link>
         </div>
       </div>
@@ -355,7 +355,7 @@ export default function EventsPage() {
         faqs={[
           {
             questionName: "How do I register for events?",
-            acceptedAnswerText: "You can register for any event by clicking the 'Register Now' button on the event card. You'll be taken to a registration form where you can provide your details and payment information."
+            acceptedAnswerText: "Registration opens soon. Click the 'Coming Soon' button on any event card to stay updated and you'll be taken to the booking form as soon as places are released."
           },
           {
             questionName: "What is the cancellation policy?",
@@ -576,7 +576,7 @@ export default function EventsPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/register" className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors">
-                  Register Now
+                  Coming Soon
                 </Link>
                 <Link href="/contact" className="border border-primary text-primary px-8 py-3 rounded-lg font-medium hover:bg-primary/10 transition-colors">
                   Contact Us

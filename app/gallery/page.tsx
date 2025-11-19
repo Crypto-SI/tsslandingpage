@@ -2,70 +2,91 @@ import type { Metadata } from "next"
 import ImageGallery from "@/components/ui/image-gallery"
 import Schema from "@/components/seo/Schema"
 
-// Generate high-quality sports-themed gallery images
+// Curated selection of on-site photography in /public/pics
 const generateGalleryImages = () => [
   {
-    id: "holiday-camp-1",
-    alt: "Children enjoying holiday camp football activities",
-    caption: "Fun-filled holiday camp session with professional coaching and team building exercises",
-    category: "Holiday Camp",
-    src: "/holiday-camp-hero-1920x800-children-football-fun.png"
+    id: "archery-lesson-1",
+    alt: "Junior athlete lining up an archery shot during camp",
+    caption: "Archery fundamentals session building focus, balance, and body control.",
+    category: "Multi-Sport",
+    src: "/pics/archery-lesson-1.jpg"
   },
   {
-    id: "after-school-1",
-    alt: "After school football training session",
-    caption: "Expert coaching focusing on skill development and teamwork in after school programs",
-    category: "After School Football",
-    src: "/after-school-hero-1920x800-children-football-training.png"
+    id: "dodgeball-drill-1",
+    alt: "Children sprinting through a high-energy dodgeball drill indoors",
+    caption: "Fast-paced dodgeball warm-up that sharpens agility and quick decision making.",
+    category: "Holiday Club",
+    src: "/pics/dodgeball-drill-1.jpg"
   },
   {
-    id: "walking-football-1",
-    alt: "Walking football session for seniors",
-    caption: "Gentle, inclusive football perfect for maintaining fitness and social connection",
-    category: "Walking Football",
-    src: "/walking-hero-1920x800-senior-football-group.png"
+    id: "coach-huddle-1",
+    alt: "Coach leading a focused huddle on the football pitch",
+    caption: "Pitch-side tactical chat ensuring every player understands the next drill.",
+    category: "Coaching",
+    src: "/pics/coach-huddle-1.jpg"
   },
   {
-    id: "toddler-1",
-    alt: "Toddler football development program",
-    caption: "Early years football fundamentals with age-appropriate activities and parent participation",
-    category: "Toddler Football",
-    src: "/toddler-hero-1920x800-parent-child-football.png"
+    id: "goal-friends-1",
+    alt: "Two young friends smiling together inside the goal frame",
+    caption: "Celebrating friendship and teamwork after a well-earned training break.",
+    category: "Football Family",
+    src: "/pics/goal-friends-1.jpg"
   },
   {
-    id: "coaching-1",
-    alt: "Professional coaching demonstration",
-    caption: "Qualified coaches providing expert guidance and technique development",
-    category: "Coaching Sessions",
-    src: "/coaches-hero-1920x800-team-professional-coaches.png"
+    id: "parent-play-1",
+    alt: "Parent joining their child for a passing drill",
+    caption: "Family-inclusive session where adults and children learn side by side.",
+    category: "Parent & Player",
+    src: "/pics/parent-play-1.jpg"
   },
   {
-    id: "holiday-camp-2",
-    alt: "Multi-sports activities during holiday program",
-    caption: "Diverse sports activities including cricket, tennis, and athletics for comprehensive development",
-    category: "Holiday Camp",
-    src: "/holiday-camp-hero-1920x800-children-football-fun.png"
+    id: "toddler-cones-1",
+    alt: "Toddler weaving a football around bright training cones",
+    caption: "Mini dribbling course engineered for little feet developing coordination.",
+    category: "Toddler Time",
+    src: "/pics/toddler-cones-1.jpg"
   },
   {
-    id: "after-school-2",
-    alt: "Match play in after school football",
-    caption: "Friendly matches applying learned skills in competitive yet supportive environment",
-    category: "After School Football",
-    src: "/after-school-hero-1920x800-children-football-training.png"
+    id: "dance-class-1",
+    alt: "Young dancers stretching together in the studio",
+    caption: "Creative movement workshop blending rhythm, strength, and confidence.",
+    category: "Performing Arts",
+    src: "/pics/dance-class-1.jpg"
   },
   {
-    id: "walking-football-2",
-    alt: "Social walking football session",
-    caption: "Community-focused sports activity promoting health and friendship among seniors",
-    category: "Walking Football",
-    src: "/walking-hero-1920x800-senior-football-group.png"
+    id: "cricket-drill-1",
+    alt: "Player practicing controlled cricket bowling indoors",
+    caption: "Technical cricket coaching to refine seam position and delivery stride.",
+    category: "Cricket",
+    src: "/pics/cricket-drill-1.jpg"
   },
   {
-    id: "toddler-2",
-    alt: "Parent and toddler football session",
-    caption: "Bonding through football with professional guidance for early childhood development",
-    category: "Toddler Football",
-    src: "/toddler-hero-1920x800-parent-child-football.png"
+    id: "everton-visit-1",
+    alt: "Everton community coach meeting excited players",
+    caption: "Special guest visit inspiring our players with top-flight insight and smiles.",
+    category: "Club Partnership",
+    src: "/pics/everton-visit-1.jpg"
+  },
+  {
+    id: "warmup-line-1",
+    alt: "Squad powering through a dynamic warm-up line",
+    caption: "Game-day intensity as players attack the warm-up ladder with intent.",
+    category: "Match Prep",
+    src: "/pics/warmup-line-1.jpg"
+  },
+  {
+    id: "cup-celebration-1",
+    alt: "Junior footballers lifting a silver cup together",
+    caption: "Competition champions raising silverware after a day of spirited play.",
+    category: "Tournaments",
+    src: "/pics/cup-celebration-1.jpg"
+  },
+  {
+    id: "trophy-team-1",
+    alt: "Full squad posing proudly with trophies and medals",
+    caption: "End-of-season presentation showcasing progress and community pride.",
+    category: "Awards Night",
+    src: "/pics/trophy-team-1.jpg"
   }
 ]
 
@@ -150,58 +171,59 @@ export default function GalleryPage() {
         }}
       />
 
-        {/* Hero Section */}
-        <section className="w-full bg-gradient-to-b from-primary/10 to-background py-16">
-          <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-              Program Gallery
-            </h1>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Explore our collection of memorable moments from sports programs, coaching sessions, and community events
-            </p>
-          </div>
-        </section>
+      {/* Hero Section */}
+      <section className="w-full bg-gradient-to-b from-primary/10 via-background to-background py-20">
+        <div className="container mx-auto px-4 text-center space-y-6">
+          <p className="uppercase tracking-[0.3em] text-xs text-muted-foreground">Captured at TSS Multisports</p>
+          <h1 className="text-4xl md:text-5xl font-bold text-primary">
+            A Day in the Life of Our Club
+          </h1>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            Twelve hand-picked highlights from recent football fixtures, creative workshops, and multi-sport adventures. Scroll through the gallery to feel the energy, commitment, and joy that power every TSS Multisports experience.
+          </p>
+        </div>
+      </section>
 
-        {/* Gallery Section */}
-        <section className="w-full py-12">
-          <ImageGallery
-            images={galleryImages}
-            title="Sports Program Gallery"
-          />
-        </section>
+      {/* Gallery Section */}
+      <section className="w-full pb-12">
+        <ImageGallery
+          images={galleryImages}
+          title="Latest Moments Gallery"
+        />
+      </section>
 
-        {/* Categories Info Section */}
-        <section className="w-full py-16 bg-muted/50">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">Our Programs</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="text-center p-6 bg-background rounded-lg">
-                <h3 className="font-semibold text-primary mb-2">Holiday Camp</h3>
-                <p className="text-sm text-muted-foreground">
-                  Fun activities during school holidays with diverse sports programs
-                </p>
-              </div>
-              <div className="text-center p-6 bg-background rounded-lg">
-                <h3 className="font-semibold text-primary mb-2">After School Football</h3>
-                <p className="text-sm text-muted-foreground">
-                  Professional coaching for ages 5-12 with skill development focus
-                </p>
-              </div>
-              <div className="text-center p-6 bg-background rounded-lg">
-                <h3 className="font-semibold text-primary mb-2">Walking Football</h3>
-                <p className="text-sm text-muted-foreground">
-                  Low-impact football for seniors promoting fitness and social connection
-                </p>
-              </div>
-              <div className="text-center p-6 bg-background rounded-lg">
-                <h3 className="font-semibold text-primary mb-2">Toddler Football</h3>
-                <p className="text-sm text-muted-foreground">
-                  Early years development program for ages 3-5 with parent participation
-                </p>
-              </div>
+      {/* Categories Info Section */}
+      <section className="w-full py-16 bg-muted/40">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">Beyond the Lens</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="text-center p-6 bg-background rounded-lg shadow-sm border border-border/40">
+              <h3 className="font-semibold text-primary mb-2">Multi-Sport Discovery</h3>
+              <p className="text-sm text-muted-foreground">
+                Archery, cricket, dance, dodgeball, and more to build the most rounded athletes.
+              </p>
+            </div>
+            <div className="text-center p-6 bg-background rounded-lg shadow-sm border border-border/40">
+              <h3 className="font-semibold text-primary mb-2">Football Pathways</h3>
+              <p className="text-sm text-muted-foreground">
+                From toddlers to tournament winners, each pathway is coached with purpose.
+              </p>
+            </div>
+            <div className="text-center p-6 bg-background rounded-lg shadow-sm border border-border/40">
+              <h3 className="font-semibold text-primary mb-2">Family & Community</h3>
+              <p className="text-sm text-muted-foreground">
+                Parents on the pitch, club visits, and award nights keep the community close.
+              </p>
+            </div>
+            <div className="text-center p-6 bg-background rounded-lg shadow-sm border border-border/40">
+              <h3 className="font-semibold text-primary mb-2">Professional Standards</h3>
+              <p className="text-sm text-muted-foreground">
+                Every session is scaffolded by accredited coaches, structured plans, and clear goals.
+              </p>
             </div>
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
+    </main>
   )
 }

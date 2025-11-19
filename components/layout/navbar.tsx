@@ -33,7 +33,7 @@ const Navbar = () => {
   const navItems = [
     { href: '/', label: 'Home' },
     { href: '/events', label: 'Events' },
-    { href: '/coaches', label: 'Coaches' },
+    // Coaches link temporarily removed until refreshed content is ready
     { href: '/gallery', label: 'Gallery' },
     { href: '/partners', label: 'Partners' },
     { href: '/new-register-interest', label: 'Register Interest' },
