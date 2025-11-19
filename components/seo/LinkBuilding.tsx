@@ -1,3 +1,5 @@
+'use client'
+
 import { ReactNode } from 'react';
 
 interface LinkBuildingProps {
@@ -238,6 +240,7 @@ export const partnerships: Partnership[] = [
     ]
   };
 
+const LinkBuilding = ({ children }: LinkBuildingProps) => {
   return (
     <>
       {/* Link Building Schema */}
@@ -279,4 +282,6 @@ export const partnerships: Partnership[] = [
       {children}
     </>
   );
-}
+};
+
+export default LinkBuilding;

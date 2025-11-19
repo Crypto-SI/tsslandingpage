@@ -81,7 +81,7 @@ const events: Event[] = [
     instructor: "Coach John Davis",
     requirements: ["Comfortable clothing", "Indoor/outdoor trainers", "Water bottle"],
     highlights: ["Health benefits", "Social connection", "Inclusive environment"],
-    imageUrl: "/walking-hero-1920x800-senior-football-group.png"
+    imageUrl: "/walking-hero-1920x800-senior-football.png"
   },
   {
     id: "4",
@@ -99,7 +99,7 @@ const events: Event[] = [
     instructor: "Coaching Team",
     requirements: ["Football kit", "Lunch", "Water bottle", "Sun protection"],
     highlights: ["5 days of coaching", "Match play", "Certificate", "Progress tracking"],
-    imageUrl: "/pics/field-drills-1.jpg"
+    imageUrl: "/events-holiday-800x600-camps.png"
   },
   {
     id: "5",
@@ -117,12 +117,12 @@ const events: Event[] = [
     instructor: "Tournament Director",
     requirements: ["Team kit", "Boots", "Shin pads", "Water bottle"],
     highlights: ["Trophies", "Professional refereeing", "Family entertainment", "Refreshments"],
-    imageUrl: "/pics/cup-celebration-1.jpg"
+    imageUrl: "/events-special-800x600-tournaments.png"
   },
   {
     id: "6",
     name: "Christmas Multisports Fun Day",
-    description: " festive multisports activities including football, dodgeball, and team games with a Christmas theme.",
+    description: "festive multisports activities including football, dodgeball, and team games with a Christmas theme.",
     type: "special",
     program: "multisports",
     startDate: "2025-12-20T10:00:00+00:00",
@@ -135,7 +135,7 @@ const events: Event[] = [
     instructor: "Coaching Team",
     requirements: ["Sports clothing", "Trainers", "Packed lunch", "Christmas spirit"],
     highlights: ["Christmas theme", "Multiple sports", "Prizes", "Hot chocolate"],
-    imageUrl: "/pics/dodgeball-drill-1.jpg"
+    imageUrl: "/events-regular-800x600-weekly-sessions.png"
   }
 ]
 
@@ -333,7 +333,7 @@ export default function EventsPage() {
         ]}
         ogTitle="Events & Sessions | TSS Multisports"
         ogDescription="Discover upcoming football sessions, holiday camps, tournaments, and special events at TSS Multisports."
-        ogImage="/events-hero-1920x800-calendar-sessions.png"
+        ogImage="/events-hero-1920x800-calendar-sports.png"
         canonicalUrl="/events"
         publishedTime="2025-09-20T00:00:00+00:00"
         modifiedTime="2025-09-20T00:00:00+00:00"
@@ -355,10 +355,10 @@ export default function EventsPage() {
         faqs={[
           {
             questionName: "How do I register for events?",
-            acceptedAnswerText: "Registration opens soon. Click the 'Coming Soon' button on any event card to stay updated and you'll be taken to the booking form as soon as places are released."
+            acceptedAnswerText: "Registration opens soon. Click 'Coming Soon' button on any event card to stay updated and you'll be taken to booking form as soon as places are released."
           },
           {
-            questionName: "What is the cancellation policy?",
+            questionName: "What is your cancellation policy?",
             acceptedAnswerText: "We offer a 48-hour cancellation policy for all regular sessions. For holiday camps and special events, we require 7 days notice for a full refund."
           },
           {
@@ -486,97 +486,37 @@ export default function EventsPage() {
         </section>
 
         {/* Events Grid */}
-        <section className="py-20">
+        <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
-            <div className="max-w-7xl mx-auto">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                  Upcoming Events
-                </h2>
-                <p className="text-lg text-muted-foreground">
-                  {sortedEvents.length} events found
-                </p>
+            <div className="max-w-6xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {sortedEvents.map((event, index) => (
+                  <AnimatedComponent key={event.id} animation="slideUp" delay={index * 0.1}>
+                    <EventCard event={event} />
+                  </AnimatedComponent>
+                ))}
               </div>
 
-              {sortedEvents.length === 0 ? (
+              {sortedEvents.length === 0 && (
                 <div className="text-center py-12">
-                  <div className="text-6xl mb-4">🏆</div>
-                  <h3 className="text-xl font-semibold mb-2">No events found</h3>
-                  <p className="text-muted-foreground">
-                    Try adjusting your filters to see more events.
-                  </p>
-                </div>
-              ) : (
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {sortedEvents.map((event) => (
-                    <AnimatedComponent key={event.id} animation="slideUp" delay={0.1}>
-                      <EventCard event={event} />
-                    </AnimatedComponent>
-                  ))}
+                  <p className="text-muted-foreground">No events found matching your criteria.</p>
                 </div>
               )}
             </div>
           </div>
         </section>
 
-        {/* Stats Section */}
-        <section className="py-20 bg-muted">
-          <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
-              <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
-                <AnimatedComponent animation="slideUp" delay={0.1}>
-                  <div className="text-4xl font-bold text-primary mb-2">
-                    {events.length}+
-                  </div>
-                  <div className="text-muted-foreground">
-                    Events This Year
-                  </div>
-                </AnimatedComponent>
-
-                <AnimatedComponent animation="slideUp" delay={0.2}>
-                  <div className="text-4xl font-bold text-primary mb-2">
-                    {events.reduce((sum, event) => sum + (event.registered || 0), 0)}+
-                  </div>
-                  <div className="text-muted-foreground">
-                    Participants
-                  </div>
-                </AnimatedComponent>
-
-                <AnimatedComponent animation="slideUp" delay={0.3}>
-                  <div className="text-4xl font-bold text-primary mb-2">
-                    {programs.length}
-                  </div>
-                  <div className="text-muted-foreground">
-                    Programs
-                  </div>
-                </AnimatedComponent>
-
-                <AnimatedComponent animation="slideUp" delay={0.4}>
-                  <div className="text-4xl font-bold text-primary mb-2">
-                    4.8★
-                  </div>
-                  <div className="text-muted-foreground">
-                    Average Rating
-                  </div>
-                </AnimatedComponent>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* CTA Section */}
-        <section className="py-20 bg-background">
+        {/* Call to Action Section */}
+        <section className="py-20 bg-primary/10">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Ready to Join the Action?
-              </h2>
-              <p className="text-xl text-muted-foreground mb-8">
-                Register for any of our events and start your football journey today!
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Join?</h2>
+              <p className="text-lg text-muted-foreground mb-8">
+                Register your interest today and we'll notify you when registration opens for upcoming events.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/register" className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors">
-                  Coming Soon
+                <Link href="/register-interest" className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors">
+                  Register Interest
                 </Link>
                 <Link href="/contact" className="border border-primary text-primary px-8 py-3 rounded-lg font-medium hover:bg-primary/10 transition-colors">
                   Contact Us

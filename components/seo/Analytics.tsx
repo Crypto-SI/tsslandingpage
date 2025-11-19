@@ -1,3 +1,5 @@
+'use client'
+
 import { ReactNode } from 'react';
 
 interface AnalyticsProps {
@@ -198,6 +200,7 @@ export const trackingConfig: TrackingConfig = {
     }
   };
 
+const Analytics = ({ children }: AnalyticsProps) => {
   return (
     <>
       {/* Google Analytics */}
@@ -367,4 +370,6 @@ export const trackingConfig: TrackingConfig = {
       {children}
     </>
   );
-}
+};
+
+export default Analytics;

@@ -1,3 +1,5 @@
+'use client'
+
 import { ReactNode } from 'react';
 
 interface SEOMaintenanceProps {
@@ -335,6 +337,7 @@ export const maintenanceSchedule: MaintenanceSchedule = {
     }
   };
 
+const SEOMaintenance = ({ children }: SEOMaintenanceProps) => {
   return (
     <>
       {/* SEO Maintenance Schema */}
@@ -376,4 +379,6 @@ export const maintenanceSchedule: MaintenanceSchedule = {
       {children}
     </>
   );
-}
+};
+
+export default SEOMaintenance;

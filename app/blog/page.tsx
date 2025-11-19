@@ -3,7 +3,8 @@ import { Calendar, Clock, User, ArrowRight, Search, TrendingUp } from "lucide-re
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import SEO from "@/components/seo/seo";
-import ContentStrategy, { contentTopics } from "@/components/seo/ContentStrategy";
+import ContentStrategy from "@/components/seo/ContentStrategy";
+import { contentTopics } from "@/lib/content-data";
 
 export default function BlogPage() {
   const blogPosts = [
